@@ -1,0 +1,16 @@
+file_format: "1"
+id: v4
+name: v4
+type: shield
+url: https://github.com/torjek
+requires: [pro_micro]
+exposes: [i2c_oled]
+features:
+  - keys
+  - display
+  - encoder
+  - underglow
+  - studio
+siblings:
+  - v4_left
+  - v4_right

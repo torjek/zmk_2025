@@ -20,6 +20,6 @@
 ---
 include:
   - board: bluemicro840_v1
-    shield: sofle_left
+    shield: v4_left
   - board: bluemicro840_v1
-    shield: sofle_right
+    shield: v4_right
