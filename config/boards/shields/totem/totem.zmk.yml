@@ -3,7 +3,7 @@ id: totem
 name: TOTEM
 type: shield
 url: https://github.com/GEIGEIGEIST/TOTEM
-requires: [bluemicro840_v1]
+requires: [pro_micro]
 features:
   - keys
 siblings:
