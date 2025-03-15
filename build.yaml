@@ -1,6 +1,6 @@
 include:
-  - board: seeeduino_xiao_ble
+  - board: bluemicro840_v1
     shield: totem_left
-  - board: seeeduino_xiao_ble
+  - board: bluemicro840_v1
     shield: totem_right
 # there is no settingsreset (needed) for the XIAO
