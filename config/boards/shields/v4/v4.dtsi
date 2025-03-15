@@ -5,7 +5,7 @@
  */
 
 #include <dt-bindings/zmk/matrix_transform.h>
-#include <layouts/josefadamcik/v4.dtsi>
+//#include <layouts/josefadamcik/v4.dtsi>
 
 &josefadamcik_v4_layout {
     transform = <&default_transform>;
