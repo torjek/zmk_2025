@@ -1,0 +1,11 @@
+file_format: "1"
+id: v4_2
+name: V4_2
+type: shield
+url: https://github.com/GEIGEIGEIST/V4_2
+requires: [pro_micro]
+features:
+  - keys
+siblings:
+  - v4_2_left
+  - v4_2_right
