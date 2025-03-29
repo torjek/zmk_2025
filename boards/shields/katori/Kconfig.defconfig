@@ -1,6 +1,0 @@
-if SHIELD_KATORI
-
-config ZMK_KEYBOARD_NAME
-    default "katori"
-
-endif
