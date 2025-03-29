@@ -2,10 +2,20 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/torjek
+    - name: petejoganson
+      url-base: https://github.com/petejohanson
+    - name: grassfedreeve
+      url-base: https://github.com/grassfedreeve
   projects:
     - name: zmk
       remote: zmkfirmware
       revision: main
       import: app/west.yml
+    - name: ec-support-zmk-module
+      remote: petejohanson
+      revision: main
+    - name: zmk-keyboards-katori
+      remote: grassfedreeve
+      revision: main
   self:
     path: config
