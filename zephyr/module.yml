@@ -1,5 +1,4 @@
 name: zmk-keyboards-katori
-name: ec-support-zmk-module
 build:
   settings:
     board_root: .
