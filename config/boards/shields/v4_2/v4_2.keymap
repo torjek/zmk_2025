@@ -75,9 +75,9 @@ label= "BASE"                              ;
     &kp ESC     &kp N1      &kp N2      &kp N3      &kp N4      &kp N5          &kp UP                    &kp ESC     &kp N1      &kp N2      &kp N3      &kp N4      &kp N5          &kp UP                 
     &kp TAB     &kp Q       &kp W       &kp F       &kp P       &kp G           &kp DOWN                  &kp TAB     &kp Q       &kp W       &kp F       &kp P       &kp G           &kp DOWN               
     &kp BSPC    &mt LGUI A  &mt LALT R  &mt LCTRL S &mt LSHFT T &kp D           &kp LEFT                  &kp BSPC    &mt LGUI A  &mt LALT R  &mt LCTRL S &mt LSHFT T &kp D           &kp LEFT               
-    &kp ESC     &kp N1      &kp N2      &kp N3      &kp N4      &kp N5          &kp UP                    &kp ESC     &kp N1      &kp N2      &kp N3      &kp N4      &kp N5          &kp UP                
-    &kp TAB     &kp Q       &kp W       &kp F       &kp P       &kp G           &kp DOWN                  &kp TAB     &kp Q       &kp W       &kp F       &kp P       &kp G           &kp DOWN       
-    &kp BSPC    &mt LGUI A  &mt LALT R  &mt LCTRL S &mt LSHFT T &kp D           &kp LEFT                  &kp BSPC    &mt LGUI A  &mt LALT R  &mt LCTRL S &mt LSHFT T &kp D           &kp LEFT   
+    &kp LSHFT   &kp Z       &kp X       &kp C       &kp V       &kp B           &kp RIGHT                 &kp LSHFT   &kp Z       &kp X       &kp C       &kp V       &kp B           &kp RIGHT              
+    &kp N1      &kp N2      &kp N3      &kp LGUI    &kp BSPC    &lt NAV SPACE   &kp M                     &kp N1      &kp N2      &kp N3      &kp LGUI    &kp BSPC    &lt NAV SPACE   &kp M           
+    &kp N4      &kp N5      &kp N6      &kp N7      &kp N8      &kp SHIFT       &kp N9                    &kp N4      &kp N5      &kp N6      &kp N7      &kp N8      &kp SHIFT       &kp N9      
                         >;
                 };
 
