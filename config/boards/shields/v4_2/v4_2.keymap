@@ -31,7 +31,7 @@
 / {
         combos {
     compatible = "zmk,combos";
-    combo_n1_space { timeout-ms = <30>; key-positions = <0 1>; bindings = <&kp N6>; };  // N1 + SPACE → N6
+    combo_test { timeout-ms = <30>; key-positions = <0 1>; bindings = <&kp N6>; };  // N1 + SPACE → N6
     // Row 0 (Numbers)
     combo_n1_space { timeout-ms = <30>; key-positions = <1 75>; bindings = <&kp N6>; };  // N1 + SPACE → N6
     combo_n2_space { timeout-ms = <30>; key-positions = <2 75>; bindings = <&kp N7>; };  // N2 + SPACE → N7
