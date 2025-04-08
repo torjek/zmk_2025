@@ -38,8 +38,8 @@
     combo_n4_space { timeout-ms = <30>; key-positions = <4 61>; bindings = <&kp N9>; };  // N4 + SPACE → N9
     combo_n5_space { timeout-ms = <30>; key-positions = <5 61>; bindings = <&kp N0>; };  // N5 + SPACE → N
     combo_test2_space { timeout-ms = <30>; key-positions = <8 61>; bindings = <&kp X>; };  // N5 + SPACE → N
-    combo_q_space  { timeout-ms = <30>; key-positions = <15 61>; bindings = <&kp SEMI>; };   // Q + SPACE
-    combo_w_space  { timeout-ms = <30>; key-positions = <16 61>; bindings = <&kp Y>; };      // W + SPACE
+    combo_q_space  { timeout-ms = <30>; key-positions = <15 0>; bindings = <&kp SEMI>; };   // Q + SPACE
+    combo_w_space  { timeout-ms = <30>; key-positions = <15 14>; bindings = <&kp Y>; };      // W + SPACE
     combo_f_space  { timeout-ms = <30>; key-positions = <17 61>; bindings = <&kp U>; };      // F + SPACE
     combo_p_space  { timeout-ms = <30>; key-positions = <18 61>; bindings = <&kp L>; };      // P + SPACE
     combo_g_space  { timeout-ms = <30>; key-positions = <19 61>; bindings = <&kp J>; };      // G + SPAC
