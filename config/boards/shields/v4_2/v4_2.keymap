@@ -99,7 +99,7 @@
 
     // Special col
     //combo_spec_2_red  { timeout-ms = <30>; key-positions = <0 60>; bindings = <&kp GRAVE>; };  
-    combo_spec_3_red  { timeout-ms = <30>; key-positions = <14 60>; bindings = <&kp shift_bracket>; }; 
+    combo_spec_3_red  { timeout-ms = <30>; key-positions = <14 60>; bindings = <&kp DOUBLE_QUOTES>; }; 
     combo_spec_4_red  { timeout-ms = <30>; key-positions = <28 60>; bindings = <&kp SQT>; };   
 
     ///////////////////////////////////////////////////////////////////////////////////////////////
