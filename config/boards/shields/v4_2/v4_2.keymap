@@ -76,7 +76,7 @@
     //combo_n4_red { timeout-ms = <30>; key-positions = <4 60>; bindings = <&kp N9>; }; 
     //combo_n5_red { timeout-ms = <30>; key-positions = <5 60>; bindings = <&kp N0>; }; 
 
-    //combo_n1_red { timeout-ms = <30>; key-positions = <1 60>; bindings = <&kp >; }; 
+    combo_n1_red { timeout-ms = <30>; key-positions = <1 60>; bindings = <&kp SPACE>; }; 
     combo_n2_red { timeout-ms = <30>; key-positions = <2 60>; bindings = <&kp MINUS>; }; 
     combo_n3_red { timeout-ms = <30>; key-positions = <3 60>; bindings = <&kp N0>; }; 
     combo_n4_red { timeout-ms = <30>; key-positions = <4 60>; bindings = <&kp SQT>; }; 
