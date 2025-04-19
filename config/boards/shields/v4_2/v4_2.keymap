@@ -99,7 +99,7 @@
 
     // Special col
     //combo_spec_2_red  { timeout-ms = <30>; key-positions = <0 60>; bindings = <&kp GRAVE>; };  
-    combo_spec_3_red  { timeout-ms = <30>; key-positions = <14 60>; bindings = <&kp DOUBLE_QUOTES>; }; 
+    combo_spec_3_red  { timeout-ms = <30>; key-positions = <14 60>; bindings = <&kp shift_bracket>; }; 
     combo_spec_4_red  { timeout-ms = <30>; key-positions = <28 60>; bindings = <&kp SQT>; };   
 
     ///////////////////////////////////////////////////////////////////////////////////////////////
@@ -160,6 +160,16 @@
                 , <&macro_tap &kp G &kp I &kp F>
                 ;
         };
+        shift_bracket: shift_bracket {
+            label = "shift bracket";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LSHFT>
+                , <&macro_tap &kp LEFT_BRACKET>
+                , <&macro_release &kp LSHFT>
+                ;
+        };
     };
 
         keymap {
@@ -197,7 +207,7 @@ bindings = <
     &kp ESC     &kp N1      &kp N2      &kp N3      &kp N4      &kp N5          &kp UP                    &kp UP      &kp N6      &kp N7      &kp N8      &kp N9      &kp N0          &kp ESC                
     &kp TAB     &kp Q       &kp W       &kp F       &kp P       &kp G           &kp DOWN                  &kp DOWN    &kp J       &kp L       &kp U       &kp Y       &kp SCLN        &kp TAB                
     &kp BSPC    &kp A       &kp R       &kp S       &kp T       &kp D           &kp RIGHT                 &kp LEFT    &mt RGUI O  &mt RALT E  &mt RCTRL I &mt RSHFT N &kp K           &kp BSPC               
-    &kp LSHFT   &kp Z       &kp X       &kp C       &kp V       &kp B           &kp LEFT                  &kp RIGHT   &kp M       &kp H       &kp COMMA   &kp DOT     &kp SLASH       &kp RSHFT              
+    &sk LSHFT   &kp Z       &kp X       &kp C       &kp V       &kp B           &kp LEFT                  &kp RIGHT   &kp M       &kp H       &kp COMMA   &kp DOT     &kp SLASH       &kp RSHFT              
     &kp N1      &kp LCTRL   &kp LGUI    &kp LALT    &kp ENTER   &kp SPACE       &kp M                     &kp M       &kp N9      &kp N8      &kp RGUI    &kp BSPC    &lt NAV SPACE   &kp N0          
     &kp N4      &kp N5      &kp N6      &kp N7      &kp N8      &kp DEL         &kp N9                    &kp N1      &kp N5      &kp N4      &kp N3      &kp N2      &kp LSHFT       &kp N6      
                         >;
