@@ -63,7 +63,7 @@
 
     // Special col
     //combo_spec_2_space  { timeout-ms = <30>; key-positions = <0 61>; bindings = <&kp GRAVE>; };    
-    combo_spec_3_space  { timeout-ms = <30>; key-positions = <14 61>; bindings = <&kp MINUS>; };  
+    combo_spec_3_space  { timeout-ms = <30>; key-positions = <14 61>; bindings = <&kp LEFT_BRACKET>; };  
     combo_spec_4_space  { timeout-ms = <30>; key-positions = <28 61>; bindings = <&kp SQT>; };      
     //combo_spec_5_space  { timeout-ms = <30>; key-positions = <42 61>; bindings = <&kp S>; };    
 
