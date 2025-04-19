@@ -106,37 +106,37 @@
     ///////////////////////////////////////////////////////////////////////////////////////////////
     //Orage/right
     // Row 0 (Numbers)
-    combo_n1_orange { timeout-ms = <30>; key-positions = <1 74>; bindings = <&kp N6>; }; 
-    combo_n2_orange { timeout-ms = <30>; key-positions = <2 74>; bindings = <&kp N7>; }; 
-    combo_n3_orange { timeout-ms = <30>; key-positions = <3 74>; bindings = <&kp N8>; }; 
-    combo_n4_orange { timeout-ms = <30>; key-positions = <4 74>; bindings = <&kp N9>; }; 
-    combo_n5_orange { timeout-ms = <30>; key-positions = <5 74>; bindings = <&kp N0>; }; 
+    combo_n1_orange { timeout-ms = <30>; key-positions = <1 75>; bindings = <&kp N6>; }; 
+    combo_n2_orange { timeout-ms = <30>; key-positions = <2 75>; bindings = <&kp N7>; }; 
+    combo_n3_orange { timeout-ms = <30>; key-positions = <3 75>; bindings = <&kp N8>; }; 
+    combo_n4_orange { timeout-ms = <30>; key-positions = <4 75>; bindings = <&kp N9>; }; 
+    combo_n5_orange { timeout-ms = <30>; key-positions = <5 75>; bindings = <&kp N0>; }; 
 
     // Row 1 (Qwerty Top Letters)
-    combo_q_orange  { timeout-ms = <30>; key-positions = <15 74>; bindings = <&kp SEMI>; }; 
-    combo_w_orange  { timeout-ms = <30>; key-positions = <16 74>; bindings = <&kp Y>; };    
-    combo_f_orange  { timeout-ms = <30>; key-positions = <17 74>; bindings = <&kp U>; };    
-    combo_p_orange  { timeout-ms = <30>; key-positions = <18 74>; bindings = <&kp L>; };    
-    combo_g_orange  { timeout-ms = <30>; key-positions = <19 74>; bindings = <&kp J>; };    
+    combo_q_orange  { timeout-ms = <30>; key-positions = <15 75>; bindings = <&kp SEMI>; }; 
+    combo_w_orange  { timeout-ms = <30>; key-positions = <16 75>; bindings = <&kp Y>; };    
+    combo_f_orange  { timeout-ms = <30>; key-positions = <17 75>; bindings = <&kp U>; };    
+    combo_p_orange  { timeout-ms = <30>; key-positions = <18 75>; bindings = <&kp L>; };    
+    combo_g_orange  { timeout-ms = <30>; key-positions = <19 75>; bindings = <&kp J>; };    
 
     // Row 2 (Home Row Letters)
-    combo_a_orange  { timeout-ms = <30>; key-positions = <29 74>; bindings = <&kp O>; }; 
-    combo_r_orange  { timeout-ms = <30>; key-positions = <30 74>; bindings = <&kp I>; }; 
-    combo_s_orange  { timeout-ms = <30>; key-positions = <31 74>; bindings = <&kp E>; }; 
-    combo_t_orange  { timeout-ms = <30>; key-positions = <32 74>; bindings = <&kp N>; }; 
-    combo_d_orange  { timeout-ms = <30>; key-positions = <33 74>; bindings = <&kp H>; }; 
+    combo_a_orange  { timeout-ms = <30>; key-positions = <29 75>; bindings = <&kp O>; }; 
+    combo_r_orange  { timeout-ms = <30>; key-positions = <30 75>; bindings = <&kp I>; }; 
+    combo_s_orange  { timeout-ms = <30>; key-positions = <31 75>; bindings = <&kp E>; }; 
+    combo_t_orange  { timeout-ms = <30>; key-positions = <32 75>; bindings = <&kp N>; }; 
+    combo_d_orange  { timeout-ms = <30>; key-positions = <33 75>; bindings = <&kp H>; }; 
 
     // Row 3 (Bottom Letters)
-    combo_z_orange  { timeout-ms = <30>; key-positions = <43 74>; bindings = <&kp SLASH>; };  
-    combo_x_orange  { timeout-ms = <30>; key-positions = <44 74>; bindings = <&kp DOT>; };    
-    combo_c_orange  { timeout-ms = <30>; key-positions = <45 74>; bindings = <&kp COMMA>; };  
-    combo_v_orange  { timeout-ms = <30>; key-positions = <46 74>; bindings = <&kp M>; };      
-    combo_b_orange  { timeout-ms = <30>; key-positions = <47 74>; bindings = <&kp K>; };      
+    combo_z_orange  { timeout-ms = <30>; key-positions = <43 75>; bindings = <&kp SLASH>; };  
+    combo_x_orange  { timeout-ms = <30>; key-positions = <44 75>; bindings = <&kp DOT>; };    
+    combo_c_orange  { timeout-ms = <30>; key-positions = <45 75>; bindings = <&kp COMMA>; };  
+    combo_v_orange  { timeout-ms = <30>; key-positions = <46 75>; bindings = <&kp M>; };      
+    combo_b_orange  { timeout-ms = <30>; key-positions = <47 75>; bindings = <&kp K>; };      
 
     // Special col
-    combo_spec_2_orange  { timeout-ms = <30>; key-positions = <0 74>; bindings = <&kp GRAVE>; };  
-    combo_spec_3_orange  { timeout-ms = <30>; key-positions = <14 74>; bindings = <&kp PERCENT>; }; 
-    combo_spec_4_orange  { timeout-ms = <30>; key-positions = <28 74>; bindings = <&kp LS(B)>; };   
+    combo_spec_2_orange  { timeout-ms = <30>; key-positions = <0 75>; bindings = <&kp GRAVE>; };  
+    combo_spec_3_orange  { timeout-ms = <30>; key-positions = <14 75>; bindings = <&kp PERCENT>; }; 
+    combo_spec_4_orange  { timeout-ms = <30>; key-positions = <28 75>; bindings = <&kp LS(B)>; };   
 
 
 };
