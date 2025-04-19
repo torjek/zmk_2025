@@ -136,7 +136,7 @@
     // Special col
     combo_spec_2_orange  { timeout-ms = <30>; key-positions = <0 75>; bindings = <&kp GRAVE>; };  
     combo_spec_3_orange  { timeout-ms = <30>; key-positions = <14 75>; bindings = <&kp PERCENT>; }; 
-    combo_spec_4_orange  { timeout-ms = <30>; key-positions = <28 75>; bindings = <&kp LS(B)>; };   
+    combo_spec_4_orange  { timeout-ms = <30>; key-positions = <28 75>; bindings = <&kp RA(B)>; };   
 
 
 };
