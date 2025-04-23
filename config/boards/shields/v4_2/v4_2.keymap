@@ -109,6 +109,8 @@
     combo_spec_3_red  { timeout-ms = <30>; key-positions = <14 60>; bindings = <&kp DOUBLE_QUOTES>; }; 
     combo_spec_4_red  { timeout-ms = <30>; key-positions = <28 60>; bindings = <&kp SQT>; };   
 
+    combo_shift_red  { timeout-ms = <30>; key-positions = <42 60>; bindings = <&kp CAPSLOCK>; };
+
     ///////////////////////////////////////////////////////////////////////////////////////////////
     //Orage/right
     // Row 0 (Numbers)
