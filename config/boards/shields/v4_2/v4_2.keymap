@@ -34,117 +34,117 @@
 
     // Blue/space
     //// Row 0 (Numbers)
-    //combo_n1_space { timeout-ms = <30>; key-positions = <1 61>; bindings = <&kp N6>; }; 
-    //combo_n2_space { timeout-ms = <30>; key-positions = <2 61>; bindings = <&kp N7>; }; 
-    //combo_n3_space { timeout-ms = <30>; key-positions = <3 61>; bindings = <&kp N8>; }; 
-    //combo_n4_space { timeout-ms = <30>; key-positions = <4 61>; bindings = <&kp N9>; }; 
-    //combo_n5_space { timeout-ms = <30>; key-positions = <5 61>; bindings = <&kp N0>; }; 
+    //combo_n1_space { timeout-ms = <60>; key-positions = <1 61>; bindings = <&kp N6>; }; 
+    //combo_n2_space { timeout-ms = <60>; key-positions = <2 61>; bindings = <&kp N7>; }; 
+    //combo_n3_space { timeout-ms = <60>; key-positions = <3 61>; bindings = <&kp N8>; }; 
+    //combo_n4_space { timeout-ms = <60>; key-positions = <4 61>; bindings = <&kp N9>; }; 
+    //combo_n5_space { timeout-ms = <60>; key-positions = <5 61>; bindings = <&kp N0>; }; 
 
     // Row 1 (Qwerty Top Letters)
-    combo_q_space  { timeout-ms = <30>; key-positions = <15 61>; bindings = <&kp SEMI>; }; 
-    combo_w_space  { timeout-ms = <30>; key-positions = <16 61>; bindings = <&kp Y>; };    
-    combo_f_space  { timeout-ms = <30>; key-positions = <17 61>; bindings = <&kp U>; };    
-    combo_p_space  { timeout-ms = <30>; key-positions = <18 61>; bindings = <&kp L>; };    
-    combo_g_space  { timeout-ms = <30>; key-positions = <19 61>; bindings = <&kp J>; };    
+    combo_q_space  { timeout-ms = <60>; key-positions = <15 61>; bindings = <&kp SEMI>; }; 
+    combo_w_space  { timeout-ms = <60>; key-positions = <16 61>; bindings = <&kp Y>; };    
+    combo_f_space  { timeout-ms = <60>; key-positions = <17 61>; bindings = <&kp U>; };    
+    combo_p_space  { timeout-ms = <60>; key-positions = <18 61>; bindings = <&kp L>; };    
+    combo_g_space  { timeout-ms = <60>; key-positions = <19 61>; bindings = <&kp J>; };    
 
     // Row 2 (Home Row Letters)
-    combo_a_space  { timeout-ms = <30>; key-positions = <29 61>; bindings = <&kp O>; }; 
-    combo_r_space  { timeout-ms = <30>; key-positions = <30 61>; bindings = <&kp I>; }; 
-    combo_s_space  { timeout-ms = <30>; key-positions = <31 61>; bindings = <&kp E>; }; 
-    combo_t_space  { timeout-ms = <30>; key-positions = <32 61>; bindings = <&kp N>; }; 
-    combo_d_space  { timeout-ms = <30>; key-positions = <33 61>; bindings = <&kp H>; }; 
+    combo_a_space  { timeout-ms = <60>; key-positions = <29 61>; bindings = <&kp O>; }; 
+    combo_r_space  { timeout-ms = <60>; key-positions = <30 61>; bindings = <&kp I>; }; 
+    combo_s_space  { timeout-ms = <60>; key-positions = <31 61>; bindings = <&kp E>; }; 
+    combo_t_space  { timeout-ms = <60>; key-positions = <32 61>; bindings = <&kp N>; }; 
+    combo_d_space  { timeout-ms = <60>; key-positions = <33 61>; bindings = <&kp H>; }; 
 
     // Row 3 (Bottom Letters)
-    combo_z_space  { timeout-ms = <30>; key-positions = <43 61>; bindings = <&kp SLASH>; };  
-    combo_x_space  { timeout-ms = <30>; key-positions = <44 61>; bindings = <&kp DOT>; };    
-    combo_c_space  { timeout-ms = <30>; key-positions = <45 61>; bindings = <&kp COMMA>; };  
-    combo_v_space  { timeout-ms = <30>; key-positions = <46 61>; bindings = <&kp M>; };      
-    combo_b_space  { timeout-ms = <30>; key-positions = <47 61>; bindings = <&kp K>; };      
+    combo_z_space  { timeout-ms = <60>; key-positions = <43 61>; bindings = <&kp SLASH>; };  
+    combo_x_space  { timeout-ms = <60>; key-positions = <44 61>; bindings = <&kp DOT>; };    
+    combo_c_space  { timeout-ms = <60>; key-positions = <45 61>; bindings = <&kp COMMA>; };  
+    combo_v_space  { timeout-ms = <60>; key-positions = <46 61>; bindings = <&kp M>; };      
+    combo_b_space  { timeout-ms = <60>; key-positions = <47 61>; bindings = <&kp K>; };      
 
     // Special col
-    //combo_spec_2_space  { timeout-ms = <30>; key-positions = <0 61>; bindings = <&kp GRAVE>; };    
-    combo_spec_3_space  { timeout-ms = <30>; key-positions = <14 61>; bindings = <&kp LEFT_BRACKET>; };  
-    combo_spec_4_space  { timeout-ms = <30>; key-positions = <28 61>; bindings = <&kp SQT>; };      
-    //combo_spec_5_space  { timeout-ms = <30>; key-positions = <42 61>; bindings = <&kp S>; };    
+    //combo_spec_2_space  { timeout-ms = <60>; key-positions = <0 61>; bindings = <&kp GRAVE>; };    
+    combo_spec_3_space  { timeout-ms = <60>; key-positions = <14 61>; bindings = <&kp LEFT_BRACKET>; };  
+    combo_spec_4_space  { timeout-ms = <60>; key-positions = <28 61>; bindings = <&kp SQT>; };      
+    //combo_spec_5_space  { timeout-ms = <60>; key-positions = <42 61>; bindings = <&kp S>; };    
 
     ///////////////////////////////////////////////////////////////////////////////////////////////
     //Red/left
     // Row 0 (Numbers)
-    //combo_n1_red { timeout-ms = <30>; key-positions = <1 60>; bindings = <&kp N6>; }; 
-    //combo_n2_red { timeout-ms = <30>; key-positions = <2 60>; bindings = <&kp N7>; }; 
-    //combo_n3_red { timeout-ms = <30>; key-positions = <3 60>; bindings = <&kp N8>; }; 
-    //combo_n4_red { timeout-ms = <30>; key-positions = <4 60>; bindings = <&kp N9>; }; 
-    //combo_n5_red { timeout-ms = <30>; key-positions = <5 60>; bindings = <&kp N0>; }; 
+    //combo_n1_red { timeout-ms = <60>; key-positions = <1 60>; bindings = <&kp N6>; }; 
+    //combo_n2_red { timeout-ms = <60>; key-positions = <2 60>; bindings = <&kp N7>; }; 
+    //combo_n3_red { timeout-ms = <60>; key-positions = <3 60>; bindings = <&kp N8>; }; 
+    //combo_n4_red { timeout-ms = <60>; key-positions = <4 60>; bindings = <&kp N9>; }; 
+    //combo_n5_red { timeout-ms = <60>; key-positions = <5 60>; bindings = <&kp N0>; }; 
 
-    combo_n1_red { timeout-ms = <30>; key-positions = <1 60>; bindings = <&kp SPACE>; }; 
-    combo_n2_red { timeout-ms = <30>; key-positions = <2 60>; bindings = <&kp MINUS>; }; 
-    combo_n3_red { timeout-ms = <30>; key-positions = <3 60>; bindings = <&kp N0>; }; 
-    combo_n4_red { timeout-ms = <30>; key-positions = <4 60>; bindings = <&kp SQT>; }; 
-    combo_n5_red { timeout-ms = <30>; key-positions = <5 60>; bindings = <&kp NON_US_BACKSLASH>; }; 
+    combo_n1_red { timeout-ms = <60>; key-positions = <1 60>; bindings = <&kp SPACE>; }; 
+    combo_n2_red { timeout-ms = <60>; key-positions = <2 60>; bindings = <&kp MINUS>; }; 
+    combo_n3_red { timeout-ms = <60>; key-positions = <3 60>; bindings = <&kp N0>; }; 
+    combo_n4_red { timeout-ms = <60>; key-positions = <4 60>; bindings = <&kp SQT>; }; 
+    combo_n5_red { timeout-ms = <60>; key-positions = <5 60>; bindings = <&kp NON_US_BACKSLASH>; }; 
 
     // Row 1 (Qwerty Top Letters)
-    combo_q_red  { timeout-ms = <30>; key-positions = <15 60>; bindings = <&kp RA(SLASH)>; }; 
-    combo_w_red  { timeout-ms = <30>; key-positions = <16 60>; bindings = <&kp KP_N7>; };    
-    combo_f_red  { timeout-ms = <30>; key-positions = <17 60>; bindings = <&kp KP_N8>; };    
-    combo_p_red  { timeout-ms = <30>; key-positions = <18 60>; bindings = <&kp KP_N9>; };    
-    combo_g_red  { timeout-ms = <30>; key-positions = <19 60>; bindings = <&kp RA(Z)>; };    
+    combo_q_red  { timeout-ms = <60>; key-positions = <15 60>; bindings = <&kp RA(SLASH)>; }; 
+    combo_w_red  { timeout-ms = <60>; key-positions = <16 60>; bindings = <&kp KP_N7>; };    
+    combo_f_red  { timeout-ms = <60>; key-positions = <17 60>; bindings = <&kp KP_N8>; };    
+    combo_p_red  { timeout-ms = <60>; key-positions = <18 60>; bindings = <&kp KP_N9>; };    
+    combo_g_red  { timeout-ms = <60>; key-positions = <19 60>; bindings = <&kp RA(Z)>; };    
 
     // Row 2 (Home Row Letters)
-    combo_a_red  { timeout-ms = <30>; key-positions = <29 60>; bindings = <&kp KP_N0>; }; 
-    combo_r_red  { timeout-ms = <30>; key-positions = <30 60>; bindings = <&kp KP_N4>; }; 
-    combo_s_red  { timeout-ms = <30>; key-positions = <31 60>; bindings = <&kp KP_N5>; }; 
-    combo_t_red  { timeout-ms = <30>; key-positions = <32 60>; bindings = <&kp KP_N6>; }; 
-    combo_d_red  { timeout-ms = <30>; key-positions = <33 60>; bindings = <&kp LS(N7)>; };
+    combo_a_red  { timeout-ms = <60>; key-positions = <29 60>; bindings = <&kp KP_N0>; }; 
+    combo_r_red  { timeout-ms = <60>; key-positions = <30 60>; bindings = <&kp KP_N4>; }; 
+    combo_s_red  { timeout-ms = <60>; key-positions = <31 60>; bindings = <&kp KP_N5>; }; 
+    combo_t_red  { timeout-ms = <60>; key-positions = <32 60>; bindings = <&kp KP_N6>; }; 
+    combo_d_red  { timeout-ms = <60>; key-positions = <33 60>; bindings = <&kp LS(N7)>; };
 
     // Row 3 (Bottom Letters)
-    combo_z_red  { timeout-ms = <30>; key-positions = <43 60>; bindings = <&kp LS(N3)>; };  
-    combo_x_red  { timeout-ms = <30>; key-positions = <44 60>; bindings = <&kp KP_N1>; };    
-    combo_c_red  { timeout-ms = <30>; key-positions = <45 60>; bindings = <&kp KP_N2>; };  
-    combo_v_red  { timeout-ms = <30>; key-positions = <46 60>; bindings = <&kp KP_N3>; };      
-    combo_b_red  { timeout-ms = <30>; key-positions = <47 60>; bindings = <&kp RA(NON_US_BACKSLASH)>; };      
+    combo_z_red  { timeout-ms = <60>; key-positions = <43 60>; bindings = <&kp LS(N3)>; };  
+    combo_x_red  { timeout-ms = <60>; key-positions = <44 60>; bindings = <&kp KP_N1>; };    
+    combo_c_red  { timeout-ms = <60>; key-positions = <45 60>; bindings = <&kp KP_N2>; };  
+    combo_v_red  { timeout-ms = <60>; key-positions = <46 60>; bindings = <&kp KP_N3>; };      
+    combo_b_red  { timeout-ms = <60>; key-positions = <47 60>; bindings = <&kp RA(NON_US_BACKSLASH)>; };      
 
     // Special col
-    //combo_spec_2_red  { timeout-ms = <30>; key-positions = <0 60>; bindings = <&kp GRAVE>; };  
+    //combo_spec_2_red  { timeout-ms = <60>; key-positions = <0 60>; bindings = <&kp GRAVE>; };  
 
-    combo_spec_3_red  { timeout-ms = <30>; key-positions = <14 60>; bindings = <&kp DOUBLE_QUOTES>; }; 
-    combo_spec_4_red  { timeout-ms = <30>; key-positions = <28 60>; bindings = <&kp SQT>; };   
+    combo_spec_3_red  { timeout-ms = <60>; key-positions = <14 60>; bindings = <&kp DOUBLE_QUOTES>; }; 
+    combo_spec_4_red  { timeout-ms = <60>; key-positions = <28 60>; bindings = <&kp SQT>; };   
 
-    combo_shift_red  { timeout-ms = <30>; key-positions = <42 60>; bindings = <&kp CAPSLOCK>; };
+    combo_shift_red  { timeout-ms = <60>; key-positions = <42 60>; bindings = <&kp CAPSLOCK>; };
 
     ///////////////////////////////////////////////////////////////////////////////////////////////
     //Orage/right
     // Row 0 (Numbers)
-    combo_n1_orange { timeout-ms = <30>; key-positions = <1 75>; bindings = <&kp RIGHT_BRACKET>; }; 
-    combo_n2_orange { timeout-ms = <30>; key-positions = <2 75>; bindings = <&kp BACKSLASH>; }; 
-    combo_n3_orange { timeout-ms = <30>; key-positions = <3 75>; bindings = <&kp LEFT_BRACKET>; }; 
-    combo_n4_orange { timeout-ms = <30>; key-positions = <4 75>; bindings = <&kp SEMI>; }; 
-    combo_n5_orange { timeout-ms = <30>; key-positions = <5 75>; bindings = <&kp EQUAL>; }; 
+    combo_n1_orange { timeout-ms = <60>; key-positions = <1 75>; bindings = <&kp RIGHT_BRACKET>; }; 
+    combo_n2_orange { timeout-ms = <60>; key-positions = <2 75>; bindings = <&kp BACKSLASH>; }; 
+    combo_n3_orange { timeout-ms = <60>; key-positions = <3 75>; bindings = <&kp LEFT_BRACKET>; }; 
+    combo_n4_orange { timeout-ms = <60>; key-positions = <4 75>; bindings = <&kp SEMI>; }; 
+    combo_n5_orange { timeout-ms = <60>; key-positions = <5 75>; bindings = <&kp EQUAL>; }; 
 
     // Row 1 (Qwerty Top Letters)
-    combo_q_orange  { timeout-ms = <30>; key-positions = <15 75>; bindings = <&kp RA(Q)>; }; 
-    combo_w_orange  { timeout-ms = <30>; key-positions = <16 75>; bindings = <&kp RA(W)>; };    
-    combo_f_orange  { timeout-ms = <30>; key-positions = <17 75>; bindings = <&kp LS(N6)>; };    
-    combo_p_orange  { timeout-ms = <30>; key-positions = <18 75>; bindings = <&kp LS(N4)>; };    
-    combo_g_orange  { timeout-ms = <30>; key-positions = <19 75>; bindings = <&kp RA(C)>; };    
+    combo_q_orange  { timeout-ms = <60>; key-positions = <15 75>; bindings = <&kp RA(Q)>; }; 
+    combo_w_orange  { timeout-ms = <60>; key-positions = <16 75>; bindings = <&kp RA(W)>; };    
+    combo_f_orange  { timeout-ms = <60>; key-positions = <17 75>; bindings = <&kp LS(N6)>; };    
+    combo_p_orange  { timeout-ms = <60>; key-positions = <18 75>; bindings = <&kp LS(N4)>; };    
+    combo_g_orange  { timeout-ms = <60>; key-positions = <19 75>; bindings = <&kp RA(C)>; };    
 
     // Row 2 (Home Row Letters)
-    combo_a_orange  { timeout-ms = <30>; key-positions = <29 75>; bindings = <&kp RA(F)>; }; 
-    combo_r_orange  { timeout-ms = <30>; key-positions = <30 75>; bindings = <&kp LS(N8)>; }; 
-    combo_s_orange  { timeout-ms = <30>; key-positions = <31 75>; bindings = <&kp LS(N9)>; }; 
-    combo_t_orange  { timeout-ms = <30>; key-positions = <32 75>; bindings = <&kp RA(G)>; }; 
-    combo_d_orange  { timeout-ms = <30>; key-positions = <33 75>; bindings = <&kp RA(N)>; }; 
+    combo_a_orange  { timeout-ms = <60>; key-positions = <29 75>; bindings = <&kp RA(F)>; }; 
+    combo_r_orange  { timeout-ms = <60>; key-positions = <30 75>; bindings = <&kp LS(N8)>; }; 
+    combo_s_orange  { timeout-ms = <60>; key-positions = <31 75>; bindings = <&kp LS(N9)>; }; 
+    combo_t_orange  { timeout-ms = <60>; key-positions = <32 75>; bindings = <&kp RA(G)>; }; 
+    combo_d_orange  { timeout-ms = <60>; key-positions = <33 75>; bindings = <&kp RA(N)>; }; 
 
     // Row 3 (Bottom Letters)
-    combo_z_orange  { timeout-ms = <30>; key-positions = <43 75>; bindings = <&kp LS(SLASH)>; };  
-    combo_x_orange  { timeout-ms = <30>; key-positions = <44 75>; bindings = <&kp LS(DOT)>; };    
-    combo_c_orange  { timeout-ms = <30>; key-positions = <45 75>; bindings = <&kp LS(COMMA)>; };  
-    combo_v_orange  { timeout-ms = <30>; key-positions = <46 75>; bindings = <&kp RA(X)>; };      
-    combo_b_orange  { timeout-ms = <30>; key-positions = <47 75>; bindings = <&kp RA(V)>; };      
+    combo_z_orange  { timeout-ms = <60>; key-positions = <43 75>; bindings = <&kp LS(SLASH)>; };  
+    combo_x_orange  { timeout-ms = <60>; key-positions = <44 75>; bindings = <&kp LS(DOT)>; };    
+    combo_c_orange  { timeout-ms = <60>; key-positions = <45 75>; bindings = <&kp LS(COMMA)>; };  
+    combo_v_orange  { timeout-ms = <60>; key-positions = <46 75>; bindings = <&kp RA(X)>; };      
+    combo_b_orange  { timeout-ms = <60>; key-positions = <47 75>; bindings = <&kp RA(V)>; };      
 
     // Special col
-    combo_spec_2_orange  { timeout-ms = <30>; key-positions = <0 75>; bindings = <&kp GRAVE>; };  
-    combo_spec_3_orange  { timeout-ms = <30>; key-positions = <14 75>; bindings = <&kp PERCENT>; }; 
-    combo_spec_4_orange  { timeout-ms = <30>; key-positions = <28 75>; bindings = <&kp RA(B)>; };   
+    combo_spec_2_orange  { timeout-ms = <60>; key-positions = <0 75>; bindings = <&kp GRAVE>; };  
+    combo_spec_3_orange  { timeout-ms = <60>; key-positions = <14 75>; bindings = <&kp PERCENT>; }; 
+    combo_spec_4_orange  { timeout-ms = <60>; key-positions = <28 75>; bindings = <&kp RA(B)>; };   
 
 
 };
