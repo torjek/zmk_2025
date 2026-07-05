@@ -4,6 +4,8 @@ manifest:
       url-base: https://github.com/torjek
     - name: grassfedreeve
       url-base: https://github.com/grassfedreeve
+    - name: aym1607
+      url-base: https://github.com/AYM1607
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -11,6 +13,9 @@ manifest:
       import: app/west.yml
     - name: zmk-keyboards-katori
       remote: grassfedreeve
+      revision: main
+    - name: zmk-driver-azoteq-iqs5xx
+      remote: aym1607
       revision: main
   self:
     path: config

@@ -17,3 +17,52 @@
         , <&pro_micro 8 GPIO_ACTIVE_HIGH>
         ;
 };
+
+#include <dt-bindings/pinctrl/nrf-pinctrl.h>
+
+&pinctrl {
+    i2c0_default: i2c0_default {
+        group1 {
+            psels = <NRF_PSEL(TWIM_SDA, 1, 13)>,
+                    <NRF_PSEL(TWIM_SCL, 0, 28)>;
+        };
+    };
+
+    i2c0_sleep: i2c0_sleep {
+        group1 {
+            psels = <NRF_PSEL(TWIM_SDA, 1, 13)>,
+                    <NRF_PSEL(TWIM_SCL, 0, 28)>;
+            low-power-enable;
+        };
+    };
+};
+
+&pro_micro_i2c {
+    status = "okay";
+
+    tps43: iqs5xx@74 {
+        compatible = "azoteq,iqs5xx";
+        status = "okay";
+        reg = <0x74>;
+        reset-gpios = <&gpio0 3 GPIO_ACTIVE_LOW>;
+        rdy-gpios = <&gpio1 11 GPIO_ACTIVE_HIGH>;
+        
+        one-finger-tap;
+        press-and-hold;
+        press-and-hold-time = <250>;
+        two-finger-tap;
+        scroll;
+        natural-scroll-y;
+        natural-scroll-x;
+        bottom-beta = <5>;
+        stationary-threshold = <5>;
+        switch-xy;
+    };
+};
+
+/ {
+    tps43_input: tps43_input {
+        compatible = "zmk,input-listener";
+        device = <&tps43>;
+    };
+};
