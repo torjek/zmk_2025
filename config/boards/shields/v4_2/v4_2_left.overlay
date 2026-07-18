@@ -56,7 +56,6 @@
         natural-scroll-x;
         bottom-beta = <5>;
         stationary-threshold = <5>;
-        switch-xy;
     };
 };
 
