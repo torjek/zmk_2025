@@ -58,6 +58,13 @@
         stationary-threshold = <5>;
         flip-x;
     };
+
+    is31fl3733: is31fl3733@50 {
+        compatible = "issi,is31fl3733";
+        reg = <0x50>;
+        status = "okay";
+        // sdb-gpios is hardwired to VCC
+    };
 };
 
 / {
