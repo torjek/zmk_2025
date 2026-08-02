@@ -31,6 +31,7 @@
     physical_layout0: physical_layout_0 {
         compatible = "zmk,physical-layout";
         display-name = "Default Layout";
+        transform = <&default_transform>;
         keys
             = <&key_physical_attrs 94 94 3 50 0 0 0>
               , <&key_physical_attrs 94 94 102 42 0 0 0>
