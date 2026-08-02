@@ -1,0 +1,407 @@
+/*
+ *     __  __                  _____            _     _ 
+ *    |  \/  | ___  _ __   ___|_   _|   _ _ __ (_)___| |_ 
+ *    | |\/| |/ _ \| '_ \ / _ \ | || | | | '_ \| / __| __|
+ *    | |  | | (_) | | | | (_) || || |_| | |_) | \__ \ |_ 
+ *    |_|  |_|\___/|_| |_|\___/ |_| \__, | .__/|_|___/\__|
+ *    \_______________________/     |___/|_|              
+ * 
+ */
+       
+
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/outputs.h>
+
+#define BASE 0
+#define NAV  2
+#define SYM  3
+#define ADJ  4
+#define BLUE 1
+
+&mt {
+  quick-tap-ms = <100>;
+  global-quick-tap;
+  flavor = "tap-preferred";
+  tapping-term-ms = <170>;
+};
+
+/ {
+        combos {
+    compatible = "zmk,combos";
+
+    // Blue/space
+    //// Row 0 (Numbers)
+    //combo_n1_space { timeout-ms = <60>; key-positions = <1 61>; bindings = <&macro_n1_space>; slow-release; }; 
+    //combo_n2_space { timeout-ms = <60>; key-positions = <2 61>; bindings = <&macro_n2_space>; slow-release; }; 
+    //combo_n3_space { timeout-ms = <60>; key-positions = <3 61>; bindings = <&macro_n3_space>; slow-release; }; 
+    //combo_n4_space { timeout-ms = <60>; key-positions = <4 61>; bindings = <&macro_n4_space>; slow-release; }; 
+    //combo_n5_space { timeout-ms = <60>; key-positions = <5 61>; bindings = <&macro_n5_space>; slow-release; }; 
+
+    // Row 1 (Qwerty Top Letters)
+    combo_q_space { timeout-ms = <60>; key-positions = <15 61>; bindings = <&macro_q_space>; slow-release; }; 
+    combo_w_space { timeout-ms = <60>; key-positions = <16 61>; bindings = <&macro_w_space>; slow-release; };    
+    combo_f_space { timeout-ms = <60>; key-positions = <17 61>; bindings = <&macro_f_space>; slow-release; };    
+    combo_p_space { timeout-ms = <60>; key-positions = <18 61>; bindings = <&macro_p_space>; slow-release; };    
+    combo_g_space { timeout-ms = <60>; key-positions = <19 61>; bindings = <&macro_g_space>; slow-release; };    
+
+    // Row 2 (Home Row Letters)
+    combo_a_space { timeout-ms = <60>; key-positions = <29 61>; bindings = <&macro_a_space>; slow-release; }; 
+    combo_r_space { timeout-ms = <60>; key-positions = <30 61>; bindings = <&macro_r_space>; slow-release; }; 
+    combo_s_space { timeout-ms = <60>; key-positions = <31 61>; bindings = <&macro_s_space>; slow-release; }; 
+    combo_t_space { timeout-ms = <60>; key-positions = <32 61>; bindings = <&macro_t_space>; slow-release; }; 
+    combo_d_space { timeout-ms = <60>; key-positions = <33 61>; bindings = <&macro_d_space>; slow-release; }; 
+
+    // Row 3 (Bottom Letters)
+    combo_z_space { timeout-ms = <60>; key-positions = <43 61>; bindings = <&macro_z_space>; slow-release; };  
+    combo_x_space { timeout-ms = <60>; key-positions = <44 61>; bindings = <&macro_x_space>; slow-release; };    
+    combo_c_space { timeout-ms = <60>; key-positions = <45 61>; bindings = <&macro_c_space>; slow-release; };  
+    combo_v_space { timeout-ms = <60>; key-positions = <46 61>; bindings = <&macro_v_space>; slow-release; };      
+    combo_b_space { timeout-ms = <60>; key-positions = <47 61>; bindings = <&macro_b_space>; slow-release; };      
+
+    // Special col
+    //combo_spec_2_space { timeout-ms = <60>; key-positions = <0 61>; bindings = <&macro_spec_2_space>; slow-release; };    
+    combo_spec_3_space { timeout-ms = <60>; key-positions = <14 61>; bindings = <&macro_spec_3_space>; slow-release; };  
+    combo_spec_4_space { timeout-ms = <60>; key-positions = <28 61>; bindings = <&macro_spec_4_space>; slow-release; };      
+    //combo_spec_5_space { timeout-ms = <60>; key-positions = <42 61>; bindings = <&macro_spec_5_space>; slow-release; };    
+
+    ///////////////////////////////////////////////////////////////////////////////////////////////
+    //Red/left
+    // Row 0 (Numbers)
+    //combo_n1_red { timeout-ms = <60>; key-positions = <1 60>; bindings = <&kp N6>; }; 
+    //combo_n2_red { timeout-ms = <60>; key-positions = <2 60>; bindings = <&kp N7>; }; 
+    //combo_n3_red { timeout-ms = <60>; key-positions = <3 60>; bindings = <&kp N8>; }; 
+    //combo_n4_red { timeout-ms = <60>; key-positions = <4 60>; bindings = <&kp N9>; }; 
+    //combo_n5_red { timeout-ms = <60>; key-positions = <5 60>; bindings = <&kp N0>; }; 
+
+    combo_n1_red { timeout-ms = <60>; key-positions = <1 60>; bindings = <&kp SPACE>; }; 
+    combo_n2_red { timeout-ms = <60>; key-positions = <2 60>; bindings = <&kp MINUS>; }; 
+    combo_n3_red { timeout-ms = <60>; key-positions = <3 60>; bindings = <&kp N0>; }; 
+    combo_n4_red { timeout-ms = <60>; key-positions = <4 60>; bindings = <&kp SQT>; }; 
+    combo_n5_red { timeout-ms = <60>; key-positions = <5 60>; bindings = <&kp NON_US_BACKSLASH>; }; 
+
+    // Row 1 (Qwerty Top Letters)
+    combo_q_red  { timeout-ms = <60>; key-positions = <15 60>; bindings = <&kp RA(SLASH)>; }; 
+    combo_w_red  { timeout-ms = <60>; key-positions = <16 60>; bindings = <&kp KP_N7>; };    
+    combo_f_red  { timeout-ms = <60>; key-positions = <17 60>; bindings = <&kp KP_N8>; };    
+    combo_p_red  { timeout-ms = <60>; key-positions = <18 60>; bindings = <&kp KP_N9>; };    
+    combo_g_red  { timeout-ms = <60>; key-positions = <19 60>; bindings = <&kp RA(Z)>; };    
+
+    // Row 2 (Home Row Letters)
+    combo_a_red  { timeout-ms = <60>; key-positions = <29 60>; bindings = <&kp KP_N0>; }; 
+    combo_r_red  { timeout-ms = <60>; key-positions = <30 60>; bindings = <&kp KP_N4>; }; 
+    combo_s_red  { timeout-ms = <60>; key-positions = <31 60>; bindings = <&kp KP_N5>; }; 
+    combo_t_red  { timeout-ms = <60>; key-positions = <32 60>; bindings = <&kp KP_N6>; }; 
+    combo_d_red  { timeout-ms = <60>; key-positions = <33 60>; bindings = <&kp LS(N7)>; };
+
+    // Row 3 (Bottom Letters)
+    combo_z_red  { timeout-ms = <60>; key-positions = <43 60>; bindings = <&kp LS(N3)>; };  
+    combo_x_red  { timeout-ms = <60>; key-positions = <44 60>; bindings = <&kp KP_N1>; };    
+    combo_c_red  { timeout-ms = <60>; key-positions = <45 60>; bindings = <&kp KP_N2>; };  
+    combo_v_red  { timeout-ms = <60>; key-positions = <46 60>; bindings = <&kp KP_N3>; };      
+    combo_b_red  { timeout-ms = <60>; key-positions = <47 60>; bindings = <&kp RA(NON_US_BACKSLASH)>; };      
+
+    // Special col
+    //combo_spec_2_red  { timeout-ms = <60>; key-positions = <0 60>; bindings = <&kp GRAVE>; };  
+
+    combo_spec_3_red  { timeout-ms = <60>; key-positions = <14 60>; bindings = <&kp DOUBLE_QUOTES>; }; 
+    combo_spec_4_red  { timeout-ms = <60>; key-positions = <28 60>; bindings = <&kp SQT>; };   
+
+    combo_shift_red  { timeout-ms = <60>; key-positions = <42 60>; bindings = <&kp CAPSLOCK>; };
+
+    ///////////////////////////////////////////////////////////////////////////////////////////////
+    //Orage/right
+    // Row 0 (Numbers)
+    combo_n1_orange { timeout-ms = <60>; key-positions = <1 75>; bindings = <&kp RIGHT_BRACKET>; }; 
+    combo_n2_orange { timeout-ms = <60>; key-positions = <2 75>; bindings = <&kp BACKSLASH>; }; 
+    combo_n3_orange { timeout-ms = <60>; key-positions = <3 75>; bindings = <&kp LEFT_BRACKET>; }; 
+    combo_n4_orange { timeout-ms = <60>; key-positions = <4 75>; bindings = <&kp SEMI>; }; 
+    combo_n5_orange { timeout-ms = <60>; key-positions = <5 75>; bindings = <&kp EQUAL>; }; 
+
+    // Row 1 (Qwerty Top Letters)
+    combo_q_orange  { timeout-ms = <60>; key-positions = <15 75>; bindings = <&kp RA(Q)>; }; 
+    combo_w_orange  { timeout-ms = <60>; key-positions = <16 75>; bindings = <&kp RA(W)>; };    
+    combo_f_orange  { timeout-ms = <60>; key-positions = <17 75>; bindings = <&kp LS(N6)>; };    
+    combo_p_orange  { timeout-ms = <60>; key-positions = <18 75>; bindings = <&kp LS(N4)>; };    
+    combo_g_orange  { timeout-ms = <60>; key-positions = <19 75>; bindings = <&kp RA(C)>; };    
+
+    // Row 2 (Home Row Letters)
+    combo_a_orange  { timeout-ms = <60>; key-positions = <29 75>; bindings = <&kp RA(F)>; }; 
+    combo_r_orange  { timeout-ms = <60>; key-positions = <30 75>; bindings = <&kp LS(N8)>; }; 
+    combo_s_orange  { timeout-ms = <60>; key-positions = <31 75>; bindings = <&kp LS(N9)>; }; 
+    combo_t_orange  { timeout-ms = <60>; key-positions = <32 75>; bindings = <&kp RA(G)>; }; 
+    combo_d_orange  { timeout-ms = <60>; key-positions = <33 75>; bindings = <&kp RA(N)>; }; 
+
+    // Row 3 (Bottom Letters)
+    combo_z_orange  { timeout-ms = <60>; key-positions = <43 75>; bindings = <&kp LS(SLASH)>; };  
+    combo_x_orange  { timeout-ms = <60>; key-positions = <44 75>; bindings = <&kp LS(DOT)>; };    
+    combo_c_orange  { timeout-ms = <60>; key-positions = <45 75>; bindings = <&kp LS(COMMA)>; };  
+    combo_v_orange  { timeout-ms = <60>; key-positions = <46 75>; bindings = <&kp RA(X)>; };      
+    combo_b_orange  { timeout-ms = <60>; key-positions = <47 75>; bindings = <&kp RA(V)>; };      
+
+    // Special col
+    combo_spec_2_orange  { timeout-ms = <60>; key-positions = <0 75>; bindings = <&kp GRAVE>; };  
+    combo_spec_3_orange  { timeout-ms = <60>; key-positions = <14 75>; bindings = <&kp PERCENT>; }; 
+    combo_spec_4_orange  { timeout-ms = <60>; key-positions = <28 75>; bindings = <&kp RA(B)>; };   
+
+
+};
+//   combos {
+//           compatible = "zmk,combos";
+//           combo_esc {
+//               timeout-ms = <50>;
+//               key-positions = <0 1>;
+//               bindings = <&kp ESC>;
+//           };
+//   };
+
+    macros {
+        macro_n1_space: macro_n1_space {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <0>;
+            bindings = <&macro_press &mo BLUE>, <&macro_tap &kp N6>, <&macro_pause_for_release>, <&macro_release &mo BLUE>;
+        };
+        macro_n2_space: macro_n2_space {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <0>;
+            bindings = <&macro_press &mo BLUE>, <&macro_tap &kp N7>, <&macro_pause_for_release>, <&macro_release &mo BLUE>;
+        };
+        macro_n3_space: macro_n3_space {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <0>;
+            bindings = <&macro_press &mo BLUE>, <&macro_tap &kp N8>, <&macro_pause_for_release>, <&macro_release &mo BLUE>;
+        };
+        macro_n4_space: macro_n4_space {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <0>;
+            bindings = <&macro_press &mo BLUE>, <&macro_tap &kp N9>, <&macro_pause_for_release>, <&macro_release &mo BLUE>;
+        };
+        macro_n5_space: macro_n5_space {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <0>;
+            bindings = <&macro_press &mo BLUE>, <&macro_tap &kp N0>, <&macro_pause_for_release>, <&macro_release &mo BLUE>;
+        };
+        macro_q_space: macro_q_space {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <0>;
+            bindings = <&macro_press &mo BLUE>, <&macro_tap &kp SEMI>, <&macro_pause_for_release>, <&macro_release &mo BLUE>;
+        };
+        macro_w_space: macro_w_space {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <0>;
+            bindings = <&macro_press &mo BLUE>, <&macro_tap &kp Y>, <&macro_pause_for_release>, <&macro_release &mo BLUE>;
+        };
+        macro_f_space: macro_f_space {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <0>;
+            bindings = <&macro_press &mo BLUE>, <&macro_tap &kp U>, <&macro_pause_for_release>, <&macro_release &mo BLUE>;
+        };
+        macro_p_space: macro_p_space {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <0>;
+            bindings = <&macro_press &mo BLUE>, <&macro_tap &kp L>, <&macro_pause_for_release>, <&macro_release &mo BLUE>;
+        };
+        macro_g_space: macro_g_space {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <0>;
+            bindings = <&macro_press &mo BLUE>, <&macro_tap &kp J>, <&macro_pause_for_release>, <&macro_release &mo BLUE>;
+        };
+        macro_a_space: macro_a_space {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <0>;
+            bindings = <&macro_press &mo BLUE>, <&macro_tap &kp O>, <&macro_pause_for_release>, <&macro_release &mo BLUE>;
+        };
+        macro_r_space: macro_r_space {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <0>;
+            bindings = <&macro_press &mo BLUE>, <&macro_tap &kp I>, <&macro_pause_for_release>, <&macro_release &mo BLUE>;
+        };
+        macro_s_space: macro_s_space {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <0>;
+            bindings = <&macro_press &mo BLUE>, <&macro_tap &kp E>, <&macro_pause_for_release>, <&macro_release &mo BLUE>;
+        };
+        macro_t_space: macro_t_space {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <0>;
+            bindings = <&macro_press &mo BLUE>, <&macro_tap &kp N>, <&macro_pause_for_release>, <&macro_release &mo BLUE>;
+        };
+        macro_d_space: macro_d_space {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <0>;
+            bindings = <&macro_press &mo BLUE>, <&macro_tap &kp H>, <&macro_pause_for_release>, <&macro_release &mo BLUE>;
+        };
+        macro_z_space: macro_z_space {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <0>;
+            bindings = <&macro_press &mo BLUE>, <&macro_tap &kp SLASH>, <&macro_pause_for_release>, <&macro_release &mo BLUE>;
+        };
+        macro_x_space: macro_x_space {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <0>;
+            bindings = <&macro_press &mo BLUE>, <&macro_tap &kp DOT>, <&macro_pause_for_release>, <&macro_release &mo BLUE>;
+        };
+        macro_c_space: macro_c_space {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <0>;
+            bindings = <&macro_press &mo BLUE>, <&macro_tap &kp COMMA>, <&macro_pause_for_release>, <&macro_release &mo BLUE>;
+        };
+        macro_v_space: macro_v_space {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <0>;
+            bindings = <&macro_press &mo BLUE>, <&macro_tap &kp M>, <&macro_pause_for_release>, <&macro_release &mo BLUE>;
+        };
+        macro_b_space: macro_b_space {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <0>;
+            bindings = <&macro_press &mo BLUE>, <&macro_tap &kp K>, <&macro_pause_for_release>, <&macro_release &mo BLUE>;
+        };
+        macro_spec_2_space: macro_spec_2_space {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <0>;
+            bindings = <&macro_press &mo BLUE>, <&macro_tap &kp GRAVE>, <&macro_pause_for_release>, <&macro_release &mo BLUE>;
+        };
+        macro_spec_3_space: macro_spec_3_space {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <0>;
+            bindings = <&macro_press &mo BLUE>, <&macro_tap &kp LEFT_BRACKET>, <&macro_pause_for_release>, <&macro_release &mo BLUE>;
+        };
+        macro_spec_4_space: macro_spec_4_space {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <0>;
+            bindings = <&macro_press &mo BLUE>, <&macro_tap &kp SQT>, <&macro_pause_for_release>, <&macro_release &mo BLUE>;
+        };
+        macro_spec_5_space: macro_spec_5_space {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <0>;
+            bindings = <&macro_press &mo BLUE>, <&macro_tap &kp S>, <&macro_pause_for_release>, <&macro_release &mo BLUE>;
+        };
+        gif: gif {
+            label = "giphy";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LSHFT>
+                , <&macro_tap &kp N2>
+                , <&macro_release &kp LSHFT>
+                , <&macro_tap &kp G &kp I &kp F>
+                ;
+        };
+        shift_bracket: shift_bracket {
+            label = "shift bracket";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LSHFT>
+                , <&macro_tap &kp LEFT_BRACKET>
+                , <&macro_release &kp LSHFT> 
+                ;
+        };
+    };
+
+        keymap {
+                compatible = "zmk,keymap";
+
+                base_layer {
+                        sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+                        
+// ╭───────────────────────────────────────────────────────╮ ╭───────────────────────────────────────────────────────╮
+// │                      LEFT HALF                        │ │                      RIGHT HALF                       │
+// ╰───────────────────────────────────────────────────────╯ ╰───────────────────────────────────────────────────────╯
+//   ╭───────╮╭───────╮╭───────╮╭───────╮╭───────╮╭───────╮      ╭───────╮       ╭───────╮      ╭───────╮╭───────╮╭───────╮╭───────╮╭───────╮╭───────╮
+//   │  0,0  ││  0,1  ││  0,2  ││  0,3  ││  0,4  ││  0,5  │      │0,6(Up)│       │0,7(Up)│      │  0,8  ││  0,9  ││ 0,10  ││ 0,11  ││ 0,12  ││ 0,13  │
+//   ╰───────╯╰───────╯╰───────╯╰───────╯╰───────╯╰───────╯    ╭─┴─────┴─╮       ╭─┴─────┴─╮    ╰───────╯╰───────╯╰───────╯╰───────╯╰───────╯╰───────╯
+//   ╭───────╮╭───────╮╭───────╮╭───────╮╭───────╮╭───────╮    │3,6   2,6│       │2,7   3,7│    ╭───────╮╭───────╮╭───────╮╭───────╮╭───────╮╭───────╮
+//   │  1,0  ││  1,1  ││  1,2  ││  1,3  ││  1,4  ││  1,5  │    │(L)   (R)│       │(L)   (R)│    │  1,8  ││  1,9  ││ 1,10  ││ 1,11  ││ 1,12  ││ 1,13  │
+//   ╰───────╯╰───────╯╰───────╯╰───────╯╰───────╯╰───────╯    ╰─┬─────┬─╯       ╰─┬─────┬─╯    ╰───────╯╰───────╯╰───────╯╰───────╯╰───────╯╰───────╯
+//   ╭───────╮╭───────╮╭───────╮╭───────╮╭───────╮╭───────╮      │  1,6  │         │  1,7  │      ╭───────╮╭───────╮╭───────╮╭───────╮╭───────╮╭───────╮
+//   │  2,0  ││  2,1  ││  2,2  ││  2,3  ││  2,4  ││  2,5  │      │ (Dn)  │         │ (Dn)  │      │  2,8  ││  2,9  ││ 2,10  ││ 2,11  ││ 2,12  ││ 2,13  │
+//   ╰───────╯╰───────╯╰───────╯╰───────╯╰───────╯╰───────╯      ╰───────╯         ╰───────╯      ╰───────╯╰───────╯╰───────╯╰───────╯╰───────╯╰───────╯
+//   ╭───────╮╭───────╮╭───────╮╭───────╮╭───────╮╭───────╮                                     ╭───────╮╭───────╮╭───────╮╭───────╮╭───────╮╭───────╮
+//   │  3,0  ││  3,1  ││  3,2  ││  3,3  ││  3,4  ││  3,5  │                                     │  3,8  ││  3,9  ││ 3,10  ││ 3,11  ││ 3,12  ││ 3,13  │
+//   ╰───────╯╰───────╯╰───────╯╰───────╯╰───────╯╰───────╯                                     ╰───────╯╰───────╯╰───────╯╰───────╯╰───────╯╰───────╯
+//   ╭───────╮╭───────╮╭───────╮╭───────╮╭───────╮╭───────╮╭───────╮                 ╭───────╮╭───────╮╭───────╮╭───────╮╭───────╮╭───────╮╭───────╮
+//   │  4,0  ││4,1(C) ││4,2(A) ││4,3(W) ││4,4(L) ││4,5(_) ││  4,6  │                 │  4,7  ││  4,8  ││  4,9  ││ 4,10  ││ 4,11  ││ 4,12  ││ 4,13  │
+//   ╰───────╯╰───────╯╰───────╯╰───────╯╰───────╯╰───────╯╰───────╯                 ╰───────╯╰───────╯╰───────╯╰───────╯╰───────╯╰───────╯╰───────╯
+//   ╭───────╮╭───────╮╭───────╮╭───────╮╭───────╮╭───────╮╭───────╮                 ╭───────╮╭───────╮╭───────╮╭───────╮╭───────╮╭───────╮╭───────╮
+//   │  5,0  ││  5,1  ││  5,2  ││  5,3  ││  5,4  ││5,5 (R)││  5,6  │                 │  5,7  ││  5,8  ││  5,9  ││ 5,10  ││ 5,11  ││ 5,12  ││ 5,13  │
+//   ╰───────╯╰───────╯╰───────╯╰───────╯╰───────╯╰───────╯╰───────╯                 ╰───────╯╰───────╯╰───────╯╰───────╯╰───────╯╰───────╯╰───────╯
+
+bindings = <                           
+// ╷          ╷          ╷          ╷          ╷          ╷          ╷                 ╷          ╷          ╷          ╷          ╷          ╷          ╷
+// | 0,0      | 0,1      | 0,2      | 0,3      | 0,4      | 0,5      | 0,6             | 0,7      | 0,8      | 0,9      | 0,10     | 0,11     | 0,12     | 0,13     |
+    &kp ESC    &kp N1     &kp N2     &kp N3     &kp N4     &kp N5     &kp UP            &kp UP     &kp N6     &kp N7     &kp N8     &kp N9     &kp N0     &kp ESC                
+// | 1,0      | 1,1      | 1,2      | 1,3      | 1,4      | 1,5      | 1,6             | 1,7      | 1,8      | 1,9      | 1,10     | 1,11     | 1,12     | 1,13     |
+    &kp TAB    &kp Q      &kp W      &kp F      &kp P      &kp G      &kp DOWN          &kp DOWN   &kp J      &kp L      &kp U      &kp Y      &kp SCLN   &kp TAB                
+// | 2,0      | 2,1      | 2,2      | 2,3      | 2,4      | 2,5      | 2,6             | 2,7      | 2,8      | 2,9      | 2,10     | 2,11     | 2,12     | 2,13     |
+    &kp BSPC   &kp A      &kp R      &kp S      &kp T      &kp D      &kp RIGHT         &kp LEFT   &mt RGUI O &mt RALT E &mt RCTRL I &mt RSHFT N &kp K      &kp BSPC               
+// | 3,0      | 3,1      | 3,2      | 3,3      | 3,4      | 3,5      | 3,6             | 3,7      | 3,8      | 3,9      | 3,10     | 3,11     | 3,12     | 3,13     |
+    &sk LSHFT  &kp Z      &kp X      &kp C      &kp V      &kp B      &kp LEFT          &kp RIGHT  &kp M      &kp H      &kp COMMA  &kp DOT    &kp SLASH  &kp RSHFT              
+// | 4,0      | 4,1 (C)  | 4,2 (A)  | 4,3 (W)  | 4,4 (L)  | 4,5 (_)  | 4,6 (R)         | 4,7      | 4,8      | 4,9      | 4,10     | 4,11     | 4,12     | 4,13     |
+    &kp N1     &kp LCTRL  &kp LALT   &kp LGUI   &kp ENTER  &lt BLUE SPACE  &kp M             &kp M      &kp N9     &kp N8     &kp RGUI   &kp BSPC   &lt NAV SPACE &kp N0  
+// | 5,0      | 5,1      | 5,2      | 5,3      | 5,4      | 5,5      | 5,6             | 5,7      | 5,8      | 5,9      | 5,10     | 5,11     | 5,12     | 5,13     |
+    &kp N4     &kp N5     &kp N6     &kp N7     &kp N8     &kp DEL    &kp N9            &kp N1     &kp N5     &kp N4     &kp N3     &kp N2     &kp LSHFT  &kp N6      
+>;
+                };
+
+                blue_layer {
+                        bindings = <
+    &kp GRAVE  &kp N6     &kp N7     &kp N8     &kp N9     &kp N0     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     
+    &kp LEFT_BRACKET&kp SEMI   &kp Y      &kp U      &kp L      &kp J      &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     
+    &kp SQT    &kp O      &kp I      &kp E      &kp N      &kp H      &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     
+    &kp S      &kp SLASH  &kp DOT    &kp COMMA  &kp M      &kp K      &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     
+    &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     
+    &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     
+>;
+                };
+        };
+};
