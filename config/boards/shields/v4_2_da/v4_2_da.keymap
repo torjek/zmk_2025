@@ -139,7 +139,7 @@
     combo_b_orange  { timeout-ms = <60>; key-positions = <47 75>; bindings = <&kp RA(V)>; };      
 
     // Special col
-    combo_spec_2_orange  { timeout-ms = <60>; key-positions = <0 75>; bindings = <&kp LS(EQ)>; };  
+    combo_spec_2_orange  { timeout-ms = <60>; key-positions = <0 75>; bindings = <&kp LS(EQUAL)>; };
     combo_spec_3_orange  { timeout-ms = <60>; key-positions = <14 75>; bindings = <&kp PERCENT>; }; 
     combo_spec_4_orange  { timeout-ms = <60>; key-positions = <28 75>; bindings = <&kp RA(B)>; };   
 
