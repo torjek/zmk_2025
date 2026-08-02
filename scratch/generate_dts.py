@@ -62,7 +62,11 @@ for r in range(6):
     for c in range(7):
         if (r,c) in coords:
             cx, cy = coords[(r,c)]
-            rot = rots.get((r,c), 0)
+            rot = rots.get((r,c), 0) * 100
+            
+            # format rotation properly for device tree compiler
+            rot_str = f"({rot})" if rot < 0 else str(rot)
+
             w = 18 if (r,c) not in [(0,6),(1,6),(2,6),(3,6)] else 8
             h = 18 if (r,c) not in [(0,6),(1,6),(2,6),(3,6)] else 8
             
@@ -72,7 +76,7 @@ for r in range(6):
             zy = round((tl_y - min_y) * 100 / 19.05)
             zw = round(w * 100 / 19.05)
             zh = round(h * 100 / 19.05)
-            phys_keys.append(f"<&key_physical_attrs {zw} {zh} {zx} {zy} {rot} 0 0>")
+            phys_keys.append(f"<&key_physical_attrs {zw} {zh} {zx} {zy} {rot_str} 0 0>")
         else:
             # Dummy key
             phys_keys.append(f"<&key_physical_attrs 0 0 0 0 0 0 0>")
@@ -82,7 +86,11 @@ for r in range(6):
         # The right half is mirrored from the left half
         if (r,c) in coords:
             cx, cy = coords[(r,c)]
-            rot = -rots.get((r,c), 0)
+            rot = -rots.get((r,c), 0) * 100
+            
+            # format rotation properly for device tree compiler
+            rot_str = f"({rot})" if rot < 0 else str(rot)
+
             w = 18 if (r,c) not in [(0,6),(1,6),(2,6),(3,6)] else 8
             h = 18 if (r,c) not in [(0,6),(1,6),(2,6),(3,6)] else 8
             
@@ -98,7 +106,7 @@ for r in range(6):
             zy = round((tl_y - min_y) * 100 / 19.05)
             zw = round(w * 100 / 19.05)
             zh = round(h * 100 / 19.05)
-            phys_keys.append(f"<&key_physical_attrs {zw} {zh} {zx} {zy} {rot} 0 0>")
+            phys_keys.append(f"<&key_physical_attrs {zw} {zh} {zx} {zy} {rot_str} 0 0>")
         else:
             phys_keys.append(f"<&key_physical_attrs 0 0 0 0 0 0 0>")
 
