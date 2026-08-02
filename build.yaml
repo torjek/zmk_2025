@@ -1,3 +1,5 @@
 include:
   - board: bluemicro840_v1
     shield: v4_2_left
+  - board: bluemicro840_v1
+    shield: v4_2_da_left
