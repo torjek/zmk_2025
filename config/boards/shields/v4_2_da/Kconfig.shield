@@ -1,2 +1,5 @@
 config SHIELD_V4_2_DA_LEFT
     def_bool $(shields_list_contains,v4_2_da_left)
+
+config SHIELD_V4_2_DA_RIGHT
+    def_bool $(shields_list_contains,v4_2_da_right)
