@@ -1,14 +1,12 @@
-//
-//                                                        ▀▀▀▀▀     ▀▀▀▀▀          ▀▀█▀▀
-//                                                        ▄▀▀▀▄  ▄  ▄▀▀▀▄  ▄  ▄▀▀▀▄  █  ▄▀▀▀▄
-//                                                        █   █  █  █   █  █  █   █  █  █   █
-//                                                         ▀▀▀   █   ▀▀▀   █   ▀▀▀   ▀   ▀▀▀
-//                                                               █      ▄▄▄█▄▄▄    █   █  
-//                                                               ▀      █  █  █     █▄█
-//                                                             ▀▀▀▀▀    █  █  █      ▀
-//                                                                      ▀  ▀  ▀
-//
-// ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
+/*
+ *     __  __                  _____            _     _ 
+ *    |  \/  | ___  _ __   ___|_   _|   _ _ __ (_)___| |_ 
+ *    | |\/| |/ _ \| '_ \ / _ \ | || | | | '_ \| / __| __|
+ *    | |  | | (_) | | | | (_) || || |_| | |_) | \__ \ |_ 
+ *    |_|  |_|\___/|_| |_|\___/ |_| \__, | .__/|_|___/\__|
+ *    \_______________________/     |___/|_|              
+ * 
+ */
        
 
 #include <behaviors.dtsi>
@@ -78,38 +76,36 @@
     //combo_n5_red { timeout-ms = <60>; key-positions = <5 60>; bindings = <&kp N0>; }; 
 
     combo_n1_red { timeout-ms = <60>; key-positions = <1 60>; bindings = <&kp SPACE>; }; 
-    combo_n2_red { timeout-ms = <60>; key-positions = <2 60>; bindings = <&kp MINUS>; }; 
-    combo_n3_red { timeout-ms = <60>; key-positions = <3 60>; bindings = <&kp N0>; }; 
-    combo_n4_red { timeout-ms = <60>; key-positions = <4 60>; bindings = <&kp SQT>; }; 
-    combo_n5_red { timeout-ms = <60>; key-positions = <5 60>; bindings = <&kp NON_US_BACKSLASH>; }; 
+    combo_n2_red { timeout-ms = <60>; key-positions = <2 60>; bindings = <&kp RA(N3)>; }; 
+    combo_n3_red { timeout-ms = <60>; key-positions = <3 60>; bindings = <&kp RA(N5)>; }; 
+    combo_n4_red { timeout-ms = <60>; key-positions = <4 60>; bindings = <&kp RA(N4)>; }; 
+    combo_n5_red { timeout-ms = <60>; key-positions = <5 60>; bindings = <&kp RA(RBKT)>; }; 
 
     // Row 1 (Qwerty Top Letters)
-    combo_q_red  { timeout-ms = <60>; key-positions = <15 60>; bindings = <&kp RA(SLASH)>; }; 
+    combo_q_red  { timeout-ms = <60>; key-positions = <15 60>; bindings = <&kp LS(NUHS)>; }; 
     combo_w_red  { timeout-ms = <60>; key-positions = <16 60>; bindings = <&kp KP_N7>; };    
     combo_f_red  { timeout-ms = <60>; key-positions = <17 60>; bindings = <&kp KP_N8>; };    
     combo_p_red  { timeout-ms = <60>; key-positions = <18 60>; bindings = <&kp KP_N9>; };    
-    combo_g_red  { timeout-ms = <60>; key-positions = <19 60>; bindings = <&kp RA(Z)>; };    
+    combo_g_red  { timeout-ms = <60>; key-positions = <19 60>; bindings = <&kp LS(NUBS)>; };    
 
     // Row 2 (Home Row Letters)
     combo_a_red  { timeout-ms = <60>; key-positions = <29 60>; bindings = <&kp KP_N0>; }; 
     combo_r_red  { timeout-ms = <60>; key-positions = <30 60>; bindings = <&kp KP_N4>; }; 
     combo_s_red  { timeout-ms = <60>; key-positions = <31 60>; bindings = <&kp KP_N5>; }; 
     combo_t_red  { timeout-ms = <60>; key-positions = <32 60>; bindings = <&kp KP_N6>; }; 
-    combo_d_red  { timeout-ms = <60>; key-positions = <33 60>; bindings = <&kp LS(N7)>; };
+    combo_d_red  { timeout-ms = <60>; key-positions = <33 60>; bindings = <&kp LS(N0)>; };
 
     // Row 3 (Bottom Letters)
-    combo_z_red  { timeout-ms = <60>; key-positions = <43 60>; bindings = <&kp LS(N3)>; };  
+    combo_z_red  { timeout-ms = <60>; key-positions = <43 60>; bindings = <&kp MINUS>; };  
     combo_x_red  { timeout-ms = <60>; key-positions = <44 60>; bindings = <&kp KP_N1>; };    
     combo_c_red  { timeout-ms = <60>; key-positions = <45 60>; bindings = <&kp KP_N2>; };  
     combo_v_red  { timeout-ms = <60>; key-positions = <46 60>; bindings = <&kp KP_N3>; };      
-    combo_b_red  { timeout-ms = <60>; key-positions = <47 60>; bindings = <&kp RA(NON_US_BACKSLASH)>; };      
+    combo_b_red  { timeout-ms = <60>; key-positions = <47 60>; bindings = <&kp NUBS>; };      
 
     // Special col
-    //combo_spec_2_red  { timeout-ms = <60>; key-positions = <0 60>; bindings = <&kp GRAVE>; };  
-
-    combo_spec_3_red  { timeout-ms = <60>; key-positions = <14 60>; bindings = <&kp DOUBLE_QUOTES>; }; 
-    combo_spec_4_red  { timeout-ms = <60>; key-positions = <28 60>; bindings = <&kp SQT>; };   
-
+    combo_spec_2_red  { timeout-ms = <60>; key-positions = <0 60>; bindings = <&kp LS(N4)>; };  
+    combo_spec_3_red  { timeout-ms = <60>; key-positions = <14 60>; bindings = <&kp LS(N2)>; }; 
+    combo_spec_4_red  { timeout-ms = <60>; key-positions = <28 60>; bindings = <&kp NUHS>; };   
     combo_shift_red  { timeout-ms = <60>; key-positions = <42 60>; bindings = <&kp CAPSLOCK>; };
 
     ///////////////////////////////////////////////////////////////////////////////////////////////
@@ -143,7 +139,7 @@
     combo_b_orange  { timeout-ms = <60>; key-positions = <47 75>; bindings = <&kp RA(V)>; };      
 
     // Special col
-    combo_spec_2_orange  { timeout-ms = <60>; key-positions = <0 75>; bindings = <&kp GRAVE>; };  
+    combo_spec_2_orange  { timeout-ms = <60>; key-positions = <0 75>; bindings = <&kp LS(EQ)>; };  
     combo_spec_3_orange  { timeout-ms = <60>; key-positions = <14 75>; bindings = <&kp PERCENT>; }; 
     combo_spec_4_orange  { timeout-ms = <60>; key-positions = <28 75>; bindings = <&kp RA(B)>; };   
 
