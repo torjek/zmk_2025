@@ -23,7 +23,7 @@ def process_file(filepath):
         # color_name: 'red' or 'orange'
         # key_pos: '60' or '75'
         # layer_name: 'RED' or 'ORANGE'
-        combo_pattern = re.compile(rf'(combo_([a-z0-9_]+)_{color_name}\s*\{{\s*timeout-ms = <\d+>;\s*key-positions = <(\d+) ({key_pos})>;\s*bindings = <([^>]+)>;\s*\}};\s*)')
+        combo_pattern = re.compile(rf'^[ \t]*(combo_([a-z0-9_]+)_{color_name}\s*\{{\s*timeout-ms = <\d+>;\s*key-positions = <(\d+) ({key_pos})>;\s*bindings = <([^>]+)>;\s*\}};\s*)', re.MULTILINE)
         combos = combo_pattern.findall(content)
         
         if not combos:
