@@ -1,5 +1,20 @@
 include:
+  # 1. Standard (Macros enabled by default because SIMPLE_MODE=0)
   - board: bluemicro840_v1
     shield: v4_2_left
+    artifact-name: v4_2_macro_firmware
+
   - board: bluemicro840_v1
     shield: v4_2_da_left
+    artifact-name: v4_2_da_macro_firmware
+
+  # 2. Simple Mode (Numbers instead of Macros)
+  - board: bluemicro840_v1
+    shield: v4_2_left
+    cmake-args: -DEXTRA_DTC_FLAGS="-DSIMPLE_MODE=1"
+    artifact-name: v4_2_simple_firmware
+
+  - board: bluemicro840_v1
+    shield: v4_2_da_left
+    cmake-args: -DEXTRA_DTC_FLAGS="-DSIMPLE_MODE=1"
+    artifact-name: v4_2_da_simple_firmware
