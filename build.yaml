@@ -11,10 +11,10 @@ include:
   # 2. Simple Mode (Numbers instead of Macros)
   - board: bluemicro840_v1
     shield: v4_2_left
-    cmake-args: -DEXTRA_CPPFLAGS="-DSIMPLE_MODE=1"
+    cmake-args: -DEXTRA_CFLAGS="-DSIMPLE_MODE=1"
     artifact-name: v4_2_simple_left_firmware
 
   - board: bluemicro840_v1
     shield: v4_2_da_left
-    cmake-args: -DEXTRA_CPPFLAGS="-DSIMPLE_MODE=1"
+    cmake-args: -DEXTRA_CFLAGS="-DSIMPLE_MODE=1"
     artifact-name: v4_2_da_simple_left_firmware
