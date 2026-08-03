@@ -1,0 +1,2 @@
+#define SIMPLE_MODE 1
+#include "../v4_2_da/v4_2_da.keymap"

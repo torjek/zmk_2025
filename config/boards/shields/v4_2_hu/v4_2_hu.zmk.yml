@@ -1,0 +1,11 @@
+file_format: "1"
+id: V4_2_HU_hu
+name: V4_2_HU_hu
+type: shield
+url: https://github.com/GEIGEIGEIST/V4_2_HU_hu
+requires: [pro_micro]
+features:
+  - keys
+siblings:
+  - V4_2_HU_hu_left
+  - V4_2_HU_hu_right
