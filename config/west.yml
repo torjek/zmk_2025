@@ -1,7 +1,7 @@
 manifest:
   remotes:
     - name: zmkfirmware
-      url-base: https://github.com/torjek
+      url-base: https://github.com/zmkfirmware
     - name: grassfedreeve
       url-base: https://github.com/grassfedreeve
     - name: aym1607

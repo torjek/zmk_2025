@@ -1,0 +1,5 @@
+board:
+  name: monogreen
+  vendor: torjek
+  socs:
+    - name: nrf52840
