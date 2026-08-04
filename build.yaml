@@ -16,3 +16,8 @@ include:
   - board: monogreen
     shield: v4_2_da_simple_left
     artifact-name: v4_2_da_simple_left_firmware
+
+  # 3. Settings Reset (Wipes Bluetooth memory)
+  - board: monogreen
+    shield: settings_reset
+    artifact-name: settings_reset_firmware
