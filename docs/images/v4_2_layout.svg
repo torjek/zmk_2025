@@ -18,12 +18,12 @@
     <rect class="key-inner" x="57.5" y="70.5" width="12" height="12"  />
     <rect class="key" x="92.75" y="70.75" width="17.5" height="17.5"  />
     <rect class="key-inner" x="95.5" y="73.5" width="12" height="12"  />
-    <rect class="key" x="131.2014" y="166.5997" width="17.5" height="17.5" transform="rotate(-60, 139.9514, 175.3497)" />
-    <rect class="key-inner" x="133.9514" y="169.3497" width="12" height="12" transform="rotate(-60, 139.9514, 175.3497)" />
+    <rect class="key" x="131.2014" y="166.5997" width="17.5" height="17.5" transform="rotate(20, 139.9514, 175.3497)" />
+    <rect class="key-inner" x="133.9514" y="169.3497" width="12" height="12" transform="rotate(20, 139.9514, 175.3497)" />
     <rect class="key" x="35.75" y="109.75" width="17.5" height="17.5"  />
     <rect class="key-inner" x="38.5" y="112.5" width="12" height="12"  />
-    <rect class="key" x="96.094" y="152.0577" width="17.5" height="17.5" transform="rotate(-15, 104.844, 160.8077)" />
-    <rect class="key-inner" x="98.844" y="154.8077" width="12" height="12" transform="rotate(-15, 104.844, 160.8077)" />
+    <rect class="key" x="96.094" y="152.0577" width="17.5" height="17.5" transform="rotate(20, 104.844, 160.8077)" />
+    <rect class="key-inner" x="98.844" y="154.8077" width="12" height="12" transform="rotate(20, 104.844, 160.8077)" />
     <rect class="key" x="35.75" y="128.75" width="17.5" height="17.5"  />
     <rect class="key-inner" x="38.5" y="131.5" width="12" height="12"  />
     <rect class="key" x="16.75" y="92.25" width="17.5" height="17.5"  />
@@ -42,8 +42,8 @@
     <rect class="key-inner" x="76.5" y="105.0" width="12" height="12"  />
     <rect class="key" x="111.75" y="112.25" width="17.5" height="17.5"  />
     <rect class="key-inner" x="114.5" y="115.0" width="12" height="12"  />
-    <rect class="key" x="114.5087" y="157.25" width="17.5" height="17.5" transform="rotate(-30, 123.2587, 166.0)" />
-    <rect class="key-inner" x="117.2587" y="160.0" width="12" height="12" transform="rotate(-30, 123.2587, 166.0)" />
+    <rect class="key" x="114.5087" y="157.25" width="17.5" height="17.5" transform="rotate(20, 123.2587, 166.0)" />
+    <rect class="key-inner" x="117.2587" y="160.0" width="12" height="12" transform="rotate(20, 123.2587, 166.0)" />
     <rect class="key" x="73.75" y="121.25" width="17.5" height="17.5"  />
     <rect class="key-inner" x="76.5" y="124.0" width="12" height="12"  />
     <rect class="key" x="111.75" y="93.25" width="17.5" height="17.5"  />

@@ -45,10 +45,11 @@ coords[(2,6)] = (nav_x + 7, nav_y) # Right
 coords[(3,6)] = (nav_x - 7, nav_y) # Left
 coords[(4,6)] = (nav_x, nav_y)     # Center (M)
 
+# Thumb keys sit parallel at 20deg clockwise on the real board (mirrored on the right half)
 rots = {
-    (4,4): -15,
-    (4,5): -30,
-    (5,5): -60
+    (4,4): 20,
+    (4,5): 20,
+    (5,5): 20
 }
 
 min_x = 25.50 - 9.525
@@ -76,7 +77,10 @@ for r in range(6):
             zy = round((tl_y - min_y) * 100 / 19.05)
             zw = round(w * 100 / 19.05)
             zh = round(h * 100 / 19.05)
-            phys_keys.append(f"<&key_physical_attrs {zw} {zh} {zx} {zy} {rot_str} 0 0>")
+            # rotate around the key centre
+            rx = round((cx - min_x) * 100 / 19.05) if rot else 0
+            ry = round((cy - min_y) * 100 / 19.05) if rot else 0
+            phys_keys.append(f"<&key_physical_attrs {zw} {zh} {zx} {zy} {rot_str} {rx} {ry}>")
         else:
             # Dummy key
             phys_keys.append(f"<&key_physical_attrs 0 0 0 0 0 0 0>")
@@ -106,7 +110,10 @@ for r in range(6):
             zy = round((tl_y - min_y) * 100 / 19.05)
             zw = round(w * 100 / 19.05)
             zh = round(h * 100 / 19.05)
-            phys_keys.append(f"<&key_physical_attrs {zw} {zh} {zx} {zy} {rot_str} 0 0>")
+            # rotate around the key centre
+            rx = round((cx - min_x) * 100 / 19.05) if rot else 0
+            ry = round((cy - min_y) * 100 / 19.05) if rot else 0
+            phys_keys.append(f"<&key_physical_attrs {zw} {zh} {zx} {zy} {rot_str} {rx} {ry}>")
         else:
             phys_keys.append(f"<&key_physical_attrs 0 0 0 0 0 0 0>")
 

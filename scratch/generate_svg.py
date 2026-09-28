@@ -52,12 +52,12 @@ for k in left_half + right_half:
     
     # Calculate rotation if any
     r = 0
-    if cx > 100 and cx < 110 and cy > 155 and cy < 165: r = -15
-    elif cx > 120 and cx < 130 and cy > 160 and cy < 170: r = -30
-    elif cx > 135 and cx < 145 and cy > 170 and cy < 180: r = -60
-    elif cx > 310 and cx < 320 and cy > 155 and cy < 165: r = 15
-    elif cx > 290 and cx < 300 and cy > 160 and cy < 170: r = 30
-    elif cx > 270 and cx < 280 and cy > 170 and cy < 180: r = 60
+    if cx > 100 and cx < 110 and cy > 155 and cy < 165: r = 20
+    elif cx > 120 and cx < 130 and cy > 160 and cy < 170: r = 20
+    elif cx > 135 and cx < 145 and cy > 170 and cy < 180: r = 20
+    elif cx > 310 and cx < 320 and cy > 155 and cy < 165: r = -20
+    elif cx > 290 and cx < 300 and cy > 160 and cy < 170: r = -20
+    elif cx > 270 and cx < 280 and cy > 170 and cy < 180: r = -20
     
     transform = f'transform="rotate({r}, {cx}, {cy})"' if r != 0 else ''
     
