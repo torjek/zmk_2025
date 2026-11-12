@@ -1,0 +1,8 @@
+# Copyright (c) 2026 MonoTypist
+# SPDX-License-Identifier: MIT
+
+# On only when a keymap defines an lpos node (it does so by including <behaviors/lpos.dtsi>).
+config ZMK_BEHAVIOR_LPOS
+    bool
+    default y
+    depends on DT_HAS_ZMK_BEHAVIOR_LPOS_ENABLED

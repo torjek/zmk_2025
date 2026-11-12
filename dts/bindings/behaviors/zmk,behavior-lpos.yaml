@@ -1,0 +1,15 @@
+# Copyright (c) 2026 MonoTypist
+# SPDX-License-Identifier: MIT
+
+description: |
+  Layer position lookup, written "&lpos LAYER POSITION".
+
+  On press: turns the layer on, then taps whatever key that layer holds at that key position.
+  On release: turns the layer off.
+
+  The key is looked up when the combo fires, not when the firmware is built, so a key changed
+  with ZMK Studio is sent by the combo too.
+
+compatible: "zmk,behavior-lpos"
+
+include: two_param.yaml

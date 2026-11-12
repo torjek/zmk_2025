@@ -10,6 +10,7 @@
        
 
 #include <behaviors.dtsi>
+#include <behaviors/lpos.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/bt.h>
@@ -47,10 +48,12 @@
     combo_n5_space { timeout-ms = <60>; key-positions = <5 61>; bindings = <&macro_n5_space>; slow-release; }; 
 
     // Row 1 (Qwerty Top Letters)
-    combo_q_space { timeout-ms = <60>; key-positions = <15 61>; bindings = <&macro_q_space>; slow-release; }; 
-    combo_w_space { timeout-ms = <60>; key-positions = <16 61>; bindings = <&macro_w_space>; slow-release; };    
-    combo_f_space { timeout-ms = <60>; key-positions = <17 61>; bindings = <&macro_f_space>; slow-release; };    
-    combo_p_space { timeout-ms = <60>; key-positions = <18 61>; bindings = <&macro_p_space>; slow-release; };    
+    // lpos spike: the first four read their key from the blue layer when they fire (src/behaviors/behavior_lpos.c).
+    // Their old macros (macro_q_space ...) are still defined below, so going back is a one-word change per line.
+    combo_q_space { timeout-ms = <60>; key-positions = <15 61>; bindings = <&lpos BLUE 15>; slow-release; }; 
+    combo_w_space { timeout-ms = <60>; key-positions = <16 61>; bindings = <&lpos BLUE 16>; slow-release; };    
+    combo_f_space { timeout-ms = <60>; key-positions = <17 61>; bindings = <&lpos BLUE 17>; slow-release; };    
+    combo_p_space { timeout-ms = <60>; key-positions = <18 61>; bindings = <&lpos BLUE 18>; slow-release; };    
     combo_g_space { timeout-ms = <60>; key-positions = <19 61>; bindings = <&macro_g_space>; slow-release; };    
 
     // Row 2 (Home Row Letters)

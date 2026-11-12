@@ -1,4 +1,9 @@
-name: zmk-keyboards-katori
+# This repository is a Zephyr module. The name must differ from every module that config/west.yml
+# pulls in (one of those is already called zmk-keyboards-katori), because this module now builds code.
+name: zmk-keyboard-monotypist
 build:
+  cmake: .
+  kconfig: Kconfig
   settings:
     board_root: .
+    dts_root: .

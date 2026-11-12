@@ -1,0 +1,16 @@
+/*
+ * Copyright (c) 2026 MonoTypist
+ * SPDX-License-Identifier: MIT
+ *
+ * Include this in a keymap to use "&lpos LAYER POSITION" (see dts/bindings/behaviors/zmk,behavior-lpos.yaml).
+ */
+
+/ {
+    behaviors {
+        lpos: layer_position {
+            compatible = "zmk,behavior-lpos";
+            #binding-cells = <2>;
+            display-name = "Layer Position";
+        };
+    };
+};
