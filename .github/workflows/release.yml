@@ -1,0 +1,50 @@
+name: Release firmware
+# A tag starting with "v" (for example v1.0.0) builds the firmware and attaches it to a GitHub release
+# under names that never change, so the website can link to
+#   https://github.com/torjek/zmk_2025/releases/latest/download/monotypist-left-en.uf2
+# (and -da, -hu, settings-reset.uf2) for ever. Tagging is the owner's call.
+on:
+  push:
+    tags: ["v*"]
+
+permissions:
+  contents: write
+
+jobs:
+  layout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 24
+      - run: node tools/gen-keymap.mjs --check
+
+  build:
+    needs: layout
+    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@bb2d711d192f3cca83dff69fe1fc5119418a0102 # the same ZMK commit as config/west.yml
+
+  release:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@v7
+        with:
+          name: firmware
+          path: built
+      - name: Give the files their lasting names
+        run: |
+          mkdir release
+          cp built/v4_2_us_macro_left_firmware.uf2 release/monotypist-left-en.uf2
+          cp built/v4_2_da_macro_left_firmware.uf2 release/monotypist-left-da.uf2
+          cp built/v4_2_hu_macro_left_firmware.uf2 release/monotypist-left-hu.uf2
+          cp built/settings_reset_firmware.uf2 release/settings-reset.uf2
+          ls -l release
+      - name: Publish the release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create "$GITHUB_REF_NAME" release/*.uf2 \
+            --repo "$GITHUB_REPOSITORY" \
+            --title "MonoTypist firmware $GITHUB_REF_NAME" \
+            --notes "Firmware for the left-hand MonoTypist: monotypist-left-en.uf2 (English), -da (Danish), -hu (Hungarian), and settings-reset.uf2, which clears the stored Bluetooth pairings. ZMK Studio works over the USB cable."
