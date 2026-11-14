@@ -57,6 +57,7 @@
     behaviors {
         td_shift: tap_dance_shift {
             compatible = "zmk,behavior-tap-dance";
+            display-name = "Shift / Caps Lock"; // the name ZMK Studio and the site's editor know it by
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&sk LSHFT>, <&kp CAPSLOCK>;
@@ -72,6 +73,7 @@
     macros {
         mac_git: mac_git {
             compatible = "zmk,behavior-macro";
+            display-name = "Git status"; // the name ZMK Studio and the site's editor know it by
             #binding-cells = <0>;
             wait-ms = <30>;
             tap-ms = <30>;
