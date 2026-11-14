@@ -1,0 +1,6 @@
+# The US MonoTypist. Everything but the language lives in ../monotypist/.
+config SHIELD_V4_2_US_LEFT
+    def_bool $(shields_list_contains,v4_2_us_left)
+
+config SHIELD_V4_2_US_RIGHT
+    def_bool $(shields_list_contains,v4_2_us_right)

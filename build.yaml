@@ -1,14 +1,23 @@
 include:
-  # 1. Standard (Macros enabled by default)
+  # 1. The shipped firmware, one per language, with ZMK Studio over USB (the snippet opens the USB
+  #    connection; the rest of the Studio settings are in each language's _left.conf).
   - board: monogreen
     shield: v4_2_hu_left
+    snippet: studio-rpc-usb-uart
     artifact-name: v4_2_hu_macro_left_firmware
 
   - board: monogreen
     shield: v4_2_da_left
+    snippet: studio-rpc-usb-uart
     artifact-name: v4_2_da_macro_left_firmware
 
-  # 2. Simple Mode (Numbers instead of Macros)
+  - board: monogreen
+    shield: v4_2_us_left
+    snippet: studio-rpc-usb-uart
+    artifact-name: v4_2_us_macro_left_firmware
+
+  # 2. Simple Mode (Numbers instead of Macros). Left as they were until it is decided whether to keep
+  #    them (IMPLEMENTATION_PLAN.md, open decision 5): no Studio.
   - board: monogreen
     shield: v4_2_hu_simple_left
     artifact-name: v4_2_hu_simple_left_firmware
@@ -21,11 +30,3 @@ include:
   - board: monogreen
     shield: settings_reset
     artifact-name: settings_reset_firmware
-
-  # 4. lpos spike (branch lpos-spike only): the Hungarian firmware with ZMK Studio over USB, unlocked,
-  #    to test that a key changed live in Studio is also sent by the "&lpos" combos.
-  - board: monogreen
-    shield: v4_2_hu_left
-    snippet: studio-rpc-usb-uart
-    cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_STUDIO_LOCKING=n
-    artifact-name: v4_2_hu_lpos_studio_left_firmware

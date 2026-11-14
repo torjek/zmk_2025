@@ -11,7 +11,19 @@ import { parseKeymap, comboTarget, LAYERS } from './extract-layout.mjs';
 
 const ROOT = path.resolve(import.meta.dirname, '..');
 const rev = process.argv[2] ?? 'lpos-spike';
-const inline = (file) => fs.readFileSync(file, 'utf8').replace(/^\s*#include "([^"]+)"\s*$/gm, (_, f) => fs.readFileSync(path.join(path.dirname(file), f), 'utf8'));
+// The keymap with its quoted includes expanded the way the preprocessor does it: a path is relative to the
+// file that includes it, and "#include NAME" takes NAME from an earlier "#define NAME "path"".
+function inline(file, defs = {}) {
+  return fs.readFileSync(file, 'utf8').replace(/\r\n/g, '\n').split('\n').map((line) => {
+    const d = line.match(/^\s*#define\s+(\w+)\s+"([^"]+)"\s*$/);
+    if (d) { defs[d[1]] = d[2]; return ''; }
+    const i = line.match(/^\s*#include\s+(?:"([^"]+)"|(\w+))\s*$/);
+    if (!i) return line;
+    const target = i[1] ?? defs[i[2]];
+    if (!target) throw new Error(`${file}: #include ${i[2]} is not defined`);
+    return inline(path.join(path.dirname(file), target), defs);
+  }).join('\n');
+}
 const variants = (km) => ({ normal: km.layers, simple: Object.fromEntries(LAYERS.map((l) => [l, km.layers[l].map((b, i) => km.simple[l]?.[i] ?? b)])) });
 
 let bad = 0;

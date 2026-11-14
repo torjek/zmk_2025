@@ -1,0 +1,2 @@
+/* The left half of the US MonoTypist: the hardware all languages share. */
+#include "../monotypist/monotypist_left.dtsi"

@@ -1,7 +1,7 @@
 // Writes each language's layer tables and combos from the layout files (layout/<lang>.json), the single
 // source of the MonoTypist layout. Node only, no packages.
 //
-//   node tools/gen-keymap.mjs           write config/boards/shields/v4_2_<lang>/v4_2_<lang>.layers.dtsi and .combos.dtsi
+//   node tools/gen-keymap.mjs           write config/boards/shields/v4_2_<lang>/v4_2_<lang>.keymap, .layers.dtsi and .combos.dtsi
 //   node tools/gen-keymap.mjs --check   change nothing; exit 1 if a written file differs from what layout/ gives
 //
 // The keymap of each language includes the two files. The firmware build runs --check, so a hand edit of
@@ -66,11 +66,19 @@ function combos(lang, data) {
   return out + '};\n';
 }
 
+// The language's keymap: it names its two generated parts and includes the keymap all languages share
+// (config/boards/shields/monotypist/monotypist.keymap.dtsi). The paths are relative to that shared file.
+const keymap = (lang) =>
+  header(lang, 'The keymap') +
+  `#define MT_COMBOS "../v4_2_${lang}/v4_2_${lang}.combos.dtsi"\n` +
+  `#define MT_LAYERS "../v4_2_${lang}/v4_2_${lang}.layers.dtsi"\n` +
+  '#include "../monotypist/monotypist.keymap.dtsi"\n';
+
 let stale = 0;
 for (const lang of languages) {
   const data = JSON.parse(fs.readFileSync(path.join(LAYOUT, `${lang}.json`), 'utf8'));
   const dir = path.join(SHIELDS, `v4_2_${lang}`);
-  for (const [file, text] of [[`v4_2_${lang}.layers.dtsi`, layers(lang, data)], [`v4_2_${lang}.combos.dtsi`, combos(lang, data)]]) {
+  for (const [file, text] of [[`v4_2_${lang}.keymap`, keymap(lang)], [`v4_2_${lang}.layers.dtsi`, layers(lang, data)], [`v4_2_${lang}.combos.dtsi`, combos(lang, data)]]) {
     const where = path.join(dir, file);
     const now = fs.existsSync(where) ? fs.readFileSync(where, 'utf8').replace(/\r\n/g, '\n') : null;
     if (now === text) continue;

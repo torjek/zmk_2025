@@ -1,6 +1,4 @@
-# Copyright (c) 2022 The ZMK Contributors
-# SPDX-License-Identifier: MIT
-
+# The HU MonoTypist. Everything but the language lives in ../monotypist/.
 config SHIELD_V4_2_HU_LEFT
     def_bool $(shields_list_contains,v4_2_hu_left)
 

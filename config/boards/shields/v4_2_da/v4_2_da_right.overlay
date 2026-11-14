@@ -1,1 +1,2 @@
-#include "../v4_2_hu/v4_2_hu_right.overlay"
+/* The right half (not built yet): the hardware all languages share. */
+#include "../monotypist/monotypist_right.dtsi"
