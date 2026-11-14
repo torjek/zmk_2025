@@ -1,0 +1,552 @@
+{
+  "language": "da",
+  "source": "config/boards/shields/v4_2_da/v4_2_da.keymap, extracted on 2026-11-14 by tools/extract-layout.mjs",
+  "sensor": "&inc_dec_kp PG_DN PG_UP",
+  "layers": {
+    "base": [
+      ["&kp ESC", "&kp C_AL_CALC", "&kp LG(DOT)", "&kp LS(LG(S))", "&mac_git", "&kp LG(V)", "&kp UP", "&kp UP", "&kp N6", "&kp N7", "&kp N8", "&kp N9", "&kp N0", "&kp ESC"],
+      ["&kp TAB", "&kp Q", "&kp W", "&kp F", "&kp P", "&kp G", "&kp DOWN", "&kp DOWN", "&kp J", "&kp L", "&kp U", "&kp Y", "&kp SCLN", "&kp TAB"],
+      ["&kp BSPC", "&kp A", "&kp R", "&kp S", "&kp T", "&kp D", "&kp RIGHT", "&kp LEFT", "&mt RGUI O", "&mt RALT E", "&mt RCTRL I", "&mt RSHFT N", "&kp K", "&kp BSPC"],
+      ["&td_shift", "&kp Z", "&kp X", "&kp C", "&kp V", "&kp B", "&kp LEFT", "&kp RIGHT", "&kp M", "&kp H", "&kp COMMA", "&kp DOT", "&kp SLASH", "&kp RSHFT"],
+      ["&kp N1", "&kp LCTRL", "&kp LALT", "&kp LGUI", "&lt RED ENTER", "&lt BLUE SPACE", "&kp M", "&kp M", "&kp N9", "&kp N8", "&kp RGUI", "&kp BSPC", "&lt NAV SPACE", "&kp N0"],
+      ["&kp N4", "&kp N5", "&kp N6", "&kp N7", "&kp N8", "&lt ORANGE DEL", "&kp N9", "&kp N1", "&kp N5", "&kp N4", "&kp N3", "&kp N2", "&kp LSHFT", "&kp N6"]
+    ],
+    "blue": [
+      ["&kp GRAVE", "&kp N0", "&kp N9", "&kp N8", "&kp N7", "&kp N6", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans"],
+      ["&kp LEFT_BRACKET", "&kp SEMI", "&kp Y", "&kp U", "&kp L", "&kp J", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans"],
+      ["&kp SQT", "&kp O", "&kp I", "&kp E", "&kp N", "&kp H", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans"],
+      ["&kp S", "&kp SLASH", "&kp DOT", "&kp COMMA", "&kp M", "&kp K", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans"],
+      ["&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans"],
+      ["&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans"]
+    ],
+    "red": [
+      ["&kp RIGHT_BRACKET", "&kp SPACE", "&kp RA(N3)", "&kp RA(N5)", "&kp RA(N4)", "&kp RA(RBKT)", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans"],
+      ["&kp LS(N2)", "&kp LS(NUHS)", "&kp KP_N7", "&kp KP_N8", "&kp KP_N9", "&kp LS(NUBS)", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans"],
+      ["&kp NUHS", "&kp KP_N0", "&kp KP_N4", "&kp KP_N5", "&kp KP_N6", "&kp LS(N0)", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans"],
+      ["&trans", "&kp MINUS", "&kp KP_N1", "&kp KP_N2", "&kp KP_N3", "&kp NUBS", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans"],
+      ["&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans"],
+      ["&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans"]
+    ],
+    "orange": [
+      ["&kp GRAVE", "&kp RIGHT_BRACKET", "&kp LS(MINUS)", "&kp LS(GRAVE)", "&kp LS(RBKT)", "&kp EQUAL", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans"],
+      ["&kp PERCENT", "&kp RA(NUBS)", "&kp RA(EQUAL)", "&kp LS(N7)", "&kp LS(N1)", "&kp LS(N6)", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans"],
+      ["&kp LS(N7)", "&kp RA(N8)", "&kp LS(N8)", "&kp LS(N9)", "&kp RA(N9)", "&kp RA(N0)", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans"],
+      ["&trans", "&kp MINUS", "&kp LS(DOT)", "&kp LS(COMMA)", "&kp LS(N3)", "&kp RA(N2)", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans"],
+      ["&kp EQUAL", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans"],
+      ["&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans"]
+    ]
+  },
+  "simple": {
+    "base": {
+      "1": "&kp N1",
+      "2": "&kp N2",
+      "3": "&kp N3",
+      "4": "&kp N4",
+      "5": "&kp N5"
+    }
+  },
+  "combos": [
+    {
+      "name": "combo_n1_space",
+      "positions": [1, 61],
+      "timeoutMs": 60,
+      "slowRelease": true
+    },
+    {
+      "name": "combo_n2_space",
+      "positions": [2, 61],
+      "timeoutMs": 60,
+      "slowRelease": true
+    },
+    {
+      "name": "combo_n3_space",
+      "positions": [3, 61],
+      "timeoutMs": 60,
+      "slowRelease": true
+    },
+    {
+      "name": "combo_n4_space",
+      "positions": [4, 61],
+      "timeoutMs": 60,
+      "slowRelease": true
+    },
+    {
+      "name": "combo_n5_space",
+      "positions": [5, 61],
+      "timeoutMs": 60,
+      "slowRelease": true
+    },
+    {
+      "name": "combo_q_space",
+      "positions": [15, 61],
+      "timeoutMs": 60,
+      "slowRelease": true
+    },
+    {
+      "name": "combo_w_space",
+      "positions": [16, 61],
+      "timeoutMs": 60,
+      "slowRelease": true
+    },
+    {
+      "name": "combo_f_space",
+      "positions": [17, 61],
+      "timeoutMs": 60,
+      "slowRelease": true
+    },
+    {
+      "name": "combo_p_space",
+      "positions": [18, 61],
+      "timeoutMs": 60,
+      "slowRelease": true
+    },
+    {
+      "name": "combo_g_space",
+      "positions": [19, 61],
+      "timeoutMs": 60,
+      "slowRelease": true
+    },
+    {
+      "name": "combo_a_space",
+      "positions": [29, 61],
+      "timeoutMs": 60,
+      "slowRelease": true
+    },
+    {
+      "name": "combo_r_space",
+      "positions": [30, 61],
+      "timeoutMs": 60,
+      "slowRelease": true
+    },
+    {
+      "name": "combo_s_space",
+      "positions": [31, 61],
+      "timeoutMs": 60,
+      "slowRelease": true
+    },
+    {
+      "name": "combo_t_space",
+      "positions": [32, 61],
+      "timeoutMs": 60,
+      "slowRelease": true
+    },
+    {
+      "name": "combo_d_space",
+      "positions": [33, 61],
+      "timeoutMs": 60,
+      "slowRelease": true
+    },
+    {
+      "name": "combo_z_space",
+      "positions": [43, 61],
+      "timeoutMs": 60,
+      "slowRelease": true
+    },
+    {
+      "name": "combo_x_space",
+      "positions": [44, 61],
+      "timeoutMs": 60,
+      "slowRelease": true
+    },
+    {
+      "name": "combo_c_space",
+      "positions": [45, 61],
+      "timeoutMs": 60,
+      "slowRelease": true
+    },
+    {
+      "name": "combo_v_space",
+      "positions": [46, 61],
+      "timeoutMs": 60,
+      "slowRelease": true
+    },
+    {
+      "name": "combo_b_space",
+      "positions": [47, 61],
+      "timeoutMs": 60,
+      "slowRelease": true
+    },
+    {
+      "name": "combo_spec_3_space",
+      "positions": [14, 61],
+      "timeoutMs": 60,
+      "slowRelease": true
+    },
+    {
+      "name": "combo_spec_4_space",
+      "positions": [28, 61],
+      "timeoutMs": 60,
+      "slowRelease": true
+    },
+    {
+      "name": "combo_n1_red",
+      "positions": [1, 60],
+      "timeoutMs": 60,
+      "slowRelease": true
+    },
+    {
+      "name": "combo_n2_red",
+      "positions": [2, 60],
+      "timeoutMs": 60,
+      "slowRelease": true
+    },
+    {
+      "name": "combo_n3_red",
+      "positions": [3, 60],
+      "timeoutMs": 60,
+      "slowRelease": true
+    },
+    {
+      "name": "combo_n4_red",
+      "positions": [4, 60],
+      "timeoutMs": 60,
+      "slowRelease": true
+    },
+    {
+      "name": "combo_n5_red",
+      "positions": [5, 60],
+      "timeoutMs": 60,
+      "slowRelease": true
+    },
+    {
+      "name": "combo_q_red",
+      "positions": [15, 60],
+      "timeoutMs": 60,
+      "slowRelease": true
+    },
+    {
+      "name": "combo_w_red",
+      "positions": [16, 60],
+      "timeoutMs": 60,
+      "slowRelease": true
+    },
+    {
+      "name": "combo_f_red",
+      "positions": [17, 60],
+      "timeoutMs": 60,
+      "slowRelease": true
+    },
+    {
+      "name": "combo_p_red",
+      "positions": [18, 60],
+      "timeoutMs": 60,
+      "slowRelease": true
+    },
+    {
+      "name": "combo_g_red",
+      "positions": [19, 60],
+      "timeoutMs": 60,
+      "slowRelease": true
+    },
+    {
+      "name": "combo_a_red",
+      "positions": [29, 60],
+      "timeoutMs": 60,
+      "slowRelease": true
+    },
+    {
+      "name": "combo_r_red",
+      "positions": [30, 60],
+      "timeoutMs": 60,
+      "slowRelease": true
+    },
+    {
+      "name": "combo_s_red",
+      "positions": [31, 60],
+      "timeoutMs": 60,
+      "slowRelease": true
+    },
+    {
+      "name": "combo_t_red",
+      "positions": [32, 60],
+      "timeoutMs": 60,
+      "slowRelease": true
+    },
+    {
+      "name": "combo_d_red",
+      "positions": [33, 60],
+      "timeoutMs": 60,
+      "slowRelease": true
+    },
+    {
+      "name": "combo_z_red",
+      "positions": [43, 60],
+      "timeoutMs": 60,
+      "slowRelease": true
+    },
+    {
+      "name": "combo_x_red",
+      "positions": [44, 60],
+      "timeoutMs": 60,
+      "slowRelease": true
+    },
+    {
+      "name": "combo_c_red",
+      "positions": [45, 60],
+      "timeoutMs": 60,
+      "slowRelease": true
+    },
+    {
+      "name": "combo_v_red",
+      "positions": [46, 60],
+      "timeoutMs": 60,
+      "slowRelease": true
+    },
+    {
+      "name": "combo_b_red",
+      "positions": [47, 60],
+      "timeoutMs": 60,
+      "slowRelease": true
+    },
+    {
+      "name": "combo_spec_2_red",
+      "positions": [0, 60],
+      "timeoutMs": 60,
+      "slowRelease": true
+    },
+    {
+      "name": "combo_spec_3_red",
+      "positions": [14, 60],
+      "timeoutMs": 60,
+      "slowRelease": true
+    },
+    {
+      "name": "combo_spec_4_red",
+      "positions": [28, 60],
+      "timeoutMs": 60,
+      "slowRelease": true
+    },
+    {
+      "name": "combo_n1_orange",
+      "positions": [1, 75],
+      "timeoutMs": 60,
+      "slowRelease": true
+    },
+    {
+      "name": "combo_n2_orange",
+      "positions": [2, 75],
+      "timeoutMs": 60,
+      "slowRelease": true
+    },
+    {
+      "name": "combo_n3_orange",
+      "positions": [3, 75],
+      "timeoutMs": 60,
+      "slowRelease": true
+    },
+    {
+      "name": "combo_n4_orange",
+      "positions": [4, 75],
+      "timeoutMs": 60,
+      "slowRelease": true
+    },
+    {
+      "name": "combo_n5_orange",
+      "positions": [5, 75],
+      "timeoutMs": 60,
+      "slowRelease": true
+    },
+    {
+      "name": "combo_q_orange",
+      "positions": [15, 75],
+      "timeoutMs": 60,
+      "slowRelease": true
+    },
+    {
+      "name": "combo_w_orange",
+      "positions": [16, 75],
+      "timeoutMs": 60,
+      "slowRelease": true
+    },
+    {
+      "name": "combo_f_orange",
+      "positions": [17, 75],
+      "timeoutMs": 60,
+      "slowRelease": true
+    },
+    {
+      "name": "combo_p_orange",
+      "positions": [18, 75],
+      "timeoutMs": 60,
+      "slowRelease": true
+    },
+    {
+      "name": "combo_g_orange",
+      "positions": [19, 75],
+      "timeoutMs": 60,
+      "slowRelease": true
+    },
+    {
+      "name": "combo_a_orange",
+      "positions": [29, 75],
+      "timeoutMs": 60,
+      "slowRelease": true
+    },
+    {
+      "name": "combo_r_orange",
+      "positions": [30, 75],
+      "timeoutMs": 60,
+      "slowRelease": true
+    },
+    {
+      "name": "combo_s_orange",
+      "positions": [31, 75],
+      "timeoutMs": 60,
+      "slowRelease": true
+    },
+    {
+      "name": "combo_t_orange",
+      "positions": [32, 75],
+      "timeoutMs": 60,
+      "slowRelease": true
+    },
+    {
+      "name": "combo_d_orange",
+      "positions": [33, 75],
+      "timeoutMs": 60,
+      "slowRelease": true
+    },
+    {
+      "name": "combo_z_orange",
+      "positions": [43, 75],
+      "timeoutMs": 60,
+      "slowRelease": true
+    },
+    {
+      "name": "combo_x_orange",
+      "positions": [44, 75],
+      "timeoutMs": 60,
+      "slowRelease": true
+    },
+    {
+      "name": "combo_c_orange",
+      "positions": [45, 75],
+      "timeoutMs": 60,
+      "slowRelease": true
+    },
+    {
+      "name": "combo_v_orange",
+      "positions": [46, 75],
+      "timeoutMs": 60,
+      "slowRelease": true
+    },
+    {
+      "name": "combo_b_orange",
+      "positions": [47, 75],
+      "timeoutMs": 60,
+      "slowRelease": true
+    },
+    {
+      "name": "combo_spec_2_orange",
+      "positions": [0, 75],
+      "timeoutMs": 60,
+      "slowRelease": true
+    },
+    {
+      "name": "combo_spec_3_orange",
+      "positions": [14, 75],
+      "timeoutMs": 60,
+      "slowRelease": true
+    },
+    {
+      "name": "combo_spec_4_orange",
+      "positions": [28, 75],
+      "timeoutMs": 60,
+      "slowRelease": true
+    },
+    {
+      "name": "combo_spec_6_orange",
+      "positions": [56, 75],
+      "timeoutMs": 60,
+      "slowRelease": true
+    }
+  ],
+  "legends": {
+    "base": {
+      "15": "Q",
+      "16": "W",
+      "17": "F",
+      "18": "P",
+      "19": "G",
+      "29": "A",
+      "30": "R",
+      "31": "S",
+      "32": "T",
+      "33": "D",
+      "43": "Z",
+      "44": "X",
+      "45": "C",
+      "46": "V",
+      "47": "B"
+    },
+    "blue": {
+      "14": "Å",
+      "15": "Æ",
+      "16": "Y",
+      "17": "U",
+      "18": "L",
+      "19": "J",
+      "28": "Ø",
+      "29": "O",
+      "30": "I",
+      "31": "E",
+      "32": "N",
+      "33": "H",
+      "43": "-",
+      "44": ".",
+      "45": ",",
+      "46": "M",
+      "47": "K"
+    },
+    "red": {
+      "0": "¨",
+      "1": " ",
+      "2": "£",
+      "3": "€",
+      "4": "$",
+      "5": "~",
+      "14": "\"",
+      "15": "*",
+      "16": "7",
+      "17": "8",
+      "18": "9",
+      "19": ">",
+      "28": "'",
+      "29": "0",
+      "30": "4",
+      "31": "5",
+      "32": "6",
+      "33": "=",
+      "43": "+",
+      "44": "1",
+      "45": "2",
+      "46": "3",
+      "47": "<"
+    },
+    "orange": {
+      "0": "½",
+      "1": "¨",
+      "2": "?",
+      "3": "§",
+      "4": "^",
+      "5": "´",
+      "14": "%",
+      "15": "\\",
+      "16": "|",
+      "17": "/",
+      "18": "!",
+      "19": "&",
+      "28": "/",
+      "29": "[",
+      "30": "(",
+      "31": ")",
+      "32": "]",
+      "33": "}",
+      "43": "+",
+      "44": ":",
+      "45": ";",
+      "46": "#",
+      "47": "@"
+    }
+  }
+}

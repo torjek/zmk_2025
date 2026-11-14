@@ -2,5 +2,17 @@ name: Build ZMK firmware
 on: [push, pull_request, workflow_dispatch]
 
 jobs:
+  # The layer tables and combos are generated from layout/*.json (tools/gen-keymap.mjs). This stops the
+  # build when a generated file was edited by hand or layout/ changed without regenerating.
+  layout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 24
+      - run: node tools/gen-keymap.mjs --check
+
   build:
-    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
+    needs: layout
+    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@bb2d711d192f3cca83dff69fe1fc5119418a0102 # the same ZMK commit as config/west.yml

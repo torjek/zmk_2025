@@ -7,15 +7,18 @@ manifest:
     - name: aym1607
       url-base: https://github.com/AYM1607
   projects:
+    # Pinned to exact commits (2026-11-14, the "main" of each on that day): ZMK Studio is still
+    # labelled alpha, and an upstream change must not break a shipped build. Move a pin on purpose,
+    # then build and flash before shipping.
     - name: zmk
       remote: zmkfirmware
-      revision: main
+      revision: bb2d711d192f3cca83dff69fe1fc5119418a0102
       import: app/west.yml
     - name: zmk-keyboards-katori
       remote: grassfedreeve
-      revision: main
+      revision: b0c751d107783e8ef16a957e1c00aa3453c75105
     - name: zmk-driver-azoteq-iqs5xx
       remote: aym1607
-      revision: main
+      revision: 27321f0232b50f0af31eb27ff97d539933467ea4
   self:
     path: config

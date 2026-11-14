@@ -1,0 +1,168 @@
+{
+  "about": "MonoTypist left hand: the ZMK matrix is 6 rows by 14 columns (row * 14 + column); the left half uses columns 0 to 6.",
+  "rows": 6,
+  "cols": 14,
+  "layers": [
+    {
+      "id": "base",
+      "index": 0,
+      "name": "BASE"
+    },
+    {
+      "id": "blue",
+      "index": 1,
+      "name": "BLUE"
+    },
+    {
+      "id": "red",
+      "index": 2,
+      "name": "RED"
+    },
+    {
+      "id": "orange",
+      "index": 3,
+      "name": "ORANGE"
+    }
+  ],
+  "thumbs": [
+    {
+      "position": 60,
+      "id": "enter",
+      "layer": "red"
+    },
+    {
+      "position": 61,
+      "id": "space",
+      "layer": "blue"
+    },
+    {
+      "position": 75,
+      "id": "delete",
+      "layer": "orange"
+    }
+  ],
+  "block": [
+    {
+      "site": "k0",
+      "position": 0
+    },
+    {
+      "site": "k1",
+      "position": 1
+    },
+    {
+      "site": "k2",
+      "position": 2
+    },
+    {
+      "site": "k3",
+      "position": 3
+    },
+    {
+      "site": "k4",
+      "position": 4
+    },
+    {
+      "site": "k5",
+      "position": 5
+    },
+    {
+      "site": "k6",
+      "position": 14
+    },
+    {
+      "site": "k7",
+      "position": 15
+    },
+    {
+      "site": "k8",
+      "position": 16
+    },
+    {
+      "site": "k9",
+      "position": 17
+    },
+    {
+      "site": "k10",
+      "position": 18
+    },
+    {
+      "site": "k11",
+      "position": 19
+    },
+    {
+      "site": "k12",
+      "position": 28
+    },
+    {
+      "site": "k13",
+      "position": 29
+    },
+    {
+      "site": "k14",
+      "position": 30
+    },
+    {
+      "site": "k15",
+      "position": 31
+    },
+    {
+      "site": "k16",
+      "position": 32
+    },
+    {
+      "site": "k17",
+      "position": 33
+    },
+    {
+      "site": "k18",
+      "position": 42
+    },
+    {
+      "site": "k19",
+      "position": 43
+    },
+    {
+      "site": "k20",
+      "position": 44
+    },
+    {
+      "site": "k21",
+      "position": 45
+    },
+    {
+      "site": "k22",
+      "position": 46
+    },
+    {
+      "site": "k23",
+      "position": 47
+    }
+  ],
+  "other": [
+    {
+      "id": "ctrl",
+      "position": 57
+    },
+    {
+      "id": "alt",
+      "position": 58
+    },
+    {
+      "id": "five-way-up",
+      "position": 6
+    },
+    {
+      "id": "five-way-down",
+      "position": 20
+    },
+    {
+      "id": "five-way-right",
+      "position": 34
+    },
+    {
+      "id": "five-way-left",
+      "position": 48
+    }
+  ]
+}
